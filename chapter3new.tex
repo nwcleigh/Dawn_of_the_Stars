@@ -28,8 +28,39 @@
 
 \par \Celaeno My sisters, I really don't want to fight with you.  First, we're sisters from the same Mother.  Second, we're pretty much stuck together in this configuration for the next several hundred million years.  So we had might as well make the most of it.
 
-\begin{tcolorbox}[sharp corners, colback=red!30, colframe=red!80!blue, title=Orbital Dynamics I]
-\par \textcolor{red}{GIVE THE READER THE LOWEST LEVEL EXPLANATION OF ORBITAL DYNAMICS POSSIBLE.}.  
+\begin{tcolorbox}[sharp corners, colback=red!30, colframe=red!80!blue, title=Orbital Dynamics Ia]
+\par \textcolor{red}{As a first approximation, the motion of celestial objects such as stars is dictated by Newton's laws of motion. These laws state that the gravitational force on a body caused by another body is determined by the masses of the two bodies, and the separation between them (decreasing with increasing distance). Something like a {\it body} may sound abstract (and a bit morbid!), but it means a point mass, that is, an object with all of its mass concentrated into a single point in space. It turns out that this is a good description if the physical object that the body represents is (close to) spherical, which is the case for most stars in the Universe. \\
+To describe the motion of a system with an arbitrary number of bodies, one computes the net force on each body by adding the gravitational force from all pairs with all other bodies (known as the {\it superposition principle}). The resulting equations of motion can only be solved in closed analytic form (that is, on pen and paper) when the number of bodies is just two (one of Newton's most renowned discoveries). When the number of bodies is larger, exact solutions can only be found in specific cases. 
+}
+%GIVE THE READER THE LOWEST LEVEL EXPLANATION OF ORBITAL DYNAMICS POSSIBLE.}.  
+\end{tcolorbox}
+
+\begin{tcolorbox}[sharp corners, colback=blue!30, colframe=blue!80!blue, title=Orbital Dynamics Ib]
+\par \textcolor{blue}{Consider two bodies with masses $m_1$ and $m_2$. Their position vectors are denoted with $\myvec{R}_1$ and $\myvec{R}_2$, respectively \note{Do we assume the reader at level blue is familiar with vectors, summation, and differentiation?}. The gravitational force on body 1 is given by
+\begin{align}
+\label{Chap3:Eq:F_1_vec}
+\myvec{F}_{1} = - \gconst m_1m_2 \frac{\myvec{R}_1 - \myvec{R}_2}{|| \myvec{R}_1 - \myvec{R}_2||^3}.
+\end{align}
+\note{Have we defined $\gconst$ already by this point?} Newton's Third Law states that the force on body 2 is simply equal in magnitude but opposite in direction to that of the force on body 1, that is,
+\begin{align}
+\myvec{F}_{2} = - \myvec{F}_{1}.
+\end{align}
+If there are more than two bodies, we need to apply the superposition principle: for each pair of bodies $(i,j)$ in the system, we compute the total force on body $i$ according to
+\begin{align}
+\label{Chap3:Eq:GravForcei}
+\myvec{F}_i = -\gconst m_i \sum_{\substack{j=1 \\ j\neq i}}^{N} m_j \frac{ \myvec{R}_i - \myvec{R}_j}{|| \myvec{R}_i - \myvec{R}_j||^3}.
+\end{align}
+Note that, in the summation over $j$, we must make sure that $j\neq i$, since we would otherwise double count pairs of bodies. Newton's second law for $\myvec{R}_i$ reads
+\begin{align}
+\label{Chap3:Eq:Newton_Second}
+\myvec{F}_i = m_i \myvec{a}_i = m_i \frac{\mathrm{d}^2 \myvec{R}_i}{\mathrm{d} t^2},
+\end{align}
+where $\myvec{a}_i$ is the acceleration on body $i$. In Newtonian dynamics, the mass $m_i$ that appears in \Eq~(\ref{Chap3:Eq:Newton_Second}), the {\it inertial mass}, is the same as the {\it gravitational mass} $m_i$ that appears in \Eq~(\ref{Chap3:Eq:GravForcei}) (this is known as the {\it equivalence principle}). Therefore, the acceleration of body $i$ is given by
+\begin{align}
+\label{Chap3:Eq:EOM}
+\frac{\mathrm{d}^2 \myvec{R}_i}{\mathrm{d} t^2} = - \gconst \sum_{\substack{j=1 \\ j\neq i}}^{N} m_j \frac{ \myvec{R}_i - \myvec{R}_j}{|| \myvec{R}_i - \myvec{R}_j||^3}.
+\end{align}
+}.  
 \end{tcolorbox}
 
 \par \Taygete \textit{Fat} chance, you bulbous sphere!
