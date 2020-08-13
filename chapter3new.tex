@@ -29,7 +29,7 @@
 \par \Celaeno My sisters, I really don't want to fight with you.  First, we're sisters from the same Mother.  Second, we're pretty much stuck together in this configuration for the next several hundred million years.  So we had might as well make the most of it.
 
 \begin{tcolorbox}[sharp corners, colback=red!30, colframe=red!80!blue, title=Orbital Dynamics Ia]
-\par \textcolor{red}{As a first approximation, the motion of celestial objects such as stars is dictated by Newton's laws of motion. These laws state that the gravitational force on a body caused by another body is determined by the masses of the two bodies, and the separation between them (decreasing with increasing distance). Something like a {\it body} may sound abstract (and a bit morbid!), but it means a point mass, that is, an object with all of its mass concentrated into a single point in space. It turns out that this is a good description if the physical object that the body represents is (close to) spherical, which is the case for most stars in the Universe. \\
+\par \textcolor{red}{As a first approximation, the motion of celestial objects such as stars is dictated by Newton's laws of motion. These laws state that the gravitational force on a body caused by another body is determined by the masses of the two bodies, and the separation between them (decreasing with increasing distance). Something like a {\it body} may sound abstract (and a bit morbid!), but it means a point mass, that is, an object with all of its mass concentrated into a single point in space. It turns out that this is a good description if the physical object that the body represents is (close to) spherical, which is the case for most stars in the Universe. \\ \\
 To describe the motion of a system with an arbitrary number of bodies, one computes the net force on each body by adding the gravitational force from all pairs with all other bodies (known as the {\it superposition principle}). The resulting equations of motion can only be solved in closed analytic form (that is, on pen and paper) when the number of bodies is just two (one of Newton's most renowned discoveries). When the number of bodies is larger, exact solutions can only be found in specific cases. 
 }
 %GIVE THE READER THE LOWEST LEVEL EXPLANATION OF ORBITAL DYNAMICS POSSIBLE.}.  
@@ -45,7 +45,8 @@ To describe the motion of a system with an arbitrary number of bodies, one compu
 \begin{align}
 \myvec{F}_{2} = - \myvec{F}_{1}.
 \end{align}
-If there are more than two bodies, we need to apply the superposition principle: for each pair of bodies $(i,j)$ in the system, we compute the total force on body $i$ according to
+From this, it is simple to see that the net force on the system is zero: $\myvec{F}_1 + \myvec{F}_2 = \myvec{0}$. \\ \\
+If there are more than two bodies, we need to apply the superposition principle: for each body $i$ in the system, we compute the total force that body by considering pairs $(i,j)$ with all other bodies according to
 \begin{align}
 \label{Chap3:Eq:GravForcei}
 \myvec{F}_i = -\gconst m_i \sum_{\substack{j=1 \\ j\neq i}}^{N} m_j \frac{ \myvec{R}_i - \myvec{R}_j}{|| \myvec{R}_i - \myvec{R}_j||^3}.
@@ -55,7 +56,7 @@ Note that, in the summation over $j$, we must make sure that $j\neq i$, since we
 \label{Chap3:Eq:Newton_Second}
 \myvec{F}_i = m_i \myvec{a}_i = m_i \frac{\mathrm{d}^2 \myvec{R}_i}{\mathrm{d} t^2},
 \end{align}
-where $\myvec{a}_i$ is the acceleration on body $i$. In Newtonian dynamics, the mass $m_i$ that appears in \Eq~(\ref{Chap3:Eq:Newton_Second}), the {\it inertial mass}, is the same as the {\it gravitational mass} $m_i$ that appears in \Eq~(\ref{Chap3:Eq:GravForcei}) (this is known as the {\it equivalence principle}). Therefore, the acceleration of body $i$ is given by
+where $t$ is the time, and $\myvec{a}_i$ is the acceleration on body $i$. In Newtonian dynamics, the mass $m_i$ that appears in \Eq~(\ref{Chap3:Eq:Newton_Second}), the {\it inertial mass}, is the same as the {\it gravitational mass} $m_i$ that appears in \Eq~(\ref{Chap3:Eq:GravForcei}) (this is known as the {\it equivalence principle}). Therefore, the acceleration of body $i$ does not depend on its own mass $m_i$, and is given by
 \begin{align}
 \label{Chap3:Eq:EOM}
 \frac{\mathrm{d}^2 \myvec{R}_i}{\mathrm{d} t^2} = - \gconst \sum_{\substack{j=1 \\ j\neq i}}^{N} m_j \frac{ \myvec{R}_i - \myvec{R}_j}{|| \myvec{R}_i - \myvec{R}_j||^3}.
@@ -75,16 +76,16 @@ where $\myvec{a}_i$ is the acceleration on body $i$. In Newtonian dynamics, the 
 
 \par \Celaeno Yaaaaawn... What a lovely day, wouldn't you say, \rmtaygete~ and \rmalcyone?
 
-\par \nar \rmcelaeno~ turned her gaze toward her sisters, but was horrified by what she saw.  Her sisters' relative distance\footnote{In other words, the distance separating their respective centers of mass.} had changed over the course of their slumber.  It had gone \textit{down}, in fact.  They were now orbiting their common center of mass closer than ever before.  What's more, it seemed to \rmcelaeno that the relative angle of inclination between the inner orbital plane formed by her sisters's orbital plane and her own outer orbital plane had changed.  They were now much more coplanar than before.
+\par \nar \rmcelaeno~ turned her gaze toward her sisters, but was horrified by what she saw.  Her sisters' relative distance\footnote{In other words, the distance separating their respective centers of mass.} had changed over the course of their slumber.  It had gone \textit{down}, in fact.  They were now orbiting their common center of mass closer than ever before.  What's more, it seemed to \rmcelaeno~ that the relative angle of inclination between the inner orbital plane formed by her sisters's orbital plane and her own outer orbital plane had changed.  They were now much more coplanar than before.
 
 %\footnote{That is, all three stars orbiting within the same 2-D plane.}  In fact, currently, \rmcelaeno~ could only see \rmalcyone~ directly; presumably, \rmtaygete~ was behind \rmalcyone, her light being eclipsed by the foreground presence of her twin sister, along the line of sight separating her from \rmcelaeno.
 
 \begin{tcolorbox}[sharp corners, colback=red!30, colframe=red!80!blue, title=Coplanar]
-\par \textcolor{red}{All objects orbit within the same 2D plane. Since there is no source of gravitational acceleration in the third dimension, isolated systems that begin coplanar will remain coplanar idenfinitely.}.  
+\par \textcolor{red}{When a systems consists of just two bodies, then they orbit within the same two-dimensional plane. Since there is no source of gravitational acceleration in the third dimension, isolated systems that begin coplanar will remain coplanar idenfinitely.}
 \end{tcolorbox}
 
 \begin{tcolorbox}[sharp corners, colback=red!30, colframe=red!80!blue, title=Orbital Inclination]
-\par \textcolor{red}{DESCRIBE OR DEFINE INCLINATION OF AN ORBIT.}.  
+\par \textcolor{red}{ Although the orbit of a two-body system lies with a two-dimensional plane, when more bodies and orbits are involved, it is useful to define the inclination of an orbit relative to a reference frame, or to another orbit. In observational astronomy, inclinations are usually defined with respect to the {\it sky plane}. This means that the `inclination' is the angle between the orbital plane, and the plane of the sky. }.  
 \end{tcolorbox}
 
 \par \nar  In fact, currently, \rmcelaeno~ could only see \rmalcyone~ directly; presumably, \rmtaygete~ was behind \rmalcyone, her light being eclipsed by the foreground presence of her twin sister, along the line of sight separating her from \rmcelaeno.
@@ -94,7 +95,7 @@ where $\myvec{a}_i$ is the acceleration on body $i$. In Newtonian dynamics, the 
 %levelone
 %or leveltwo?
 \begin{tcolorbox}[sharp corners, colback=red!30, colframe=red!80!blue, title=Orbital Eccentricity]
-\par \textcolor{red}{The Earth orbits about the Sun on a roughly circular orbit, such that its distance from the Sun does not change much over the course of a year.  Hence, a reasonable approximation here for most purposes is that the Earth's orbital eccentricity is nearly zero, or e $\sim$ 0.  This is not the case for every orbit, however.  Some orbits have non-zero eccentricities, orbiting their centers of mass on elliptic orbits.  In the limit e $=$ 1, the two bodies orbit each along a straight line, and are doomed to crash into each other and collide for negative total orbital energies.}  
+\par \textcolor{red}{The Earth orbits about the Sun on a roughly circular orbit, such that its distance from the Sun does not change much over the course of a year.  Hence, a reasonable approximation here for most purposes is that the Earth's orbital eccentricity is nearly zero, or $e \sim 0$.  This is not the case for every orbit, however.  Some orbits have non-zero eccentricities, orbiting their centers of mass on elliptic orbits.  In the limit $e \rightarrow = 1$, the two bodies orbit each along a straight line, and are doomed to crash into each other and collide.}
 \end{tcolorbox}
 
 \par \nar In particular, they now swung out to larger relative distances with respect to their common center of mass; here, they sit patiently due to their much slower orbital velocities. 
@@ -109,9 +110,68 @@ where $\myvec{a}_i$ is the acceleration on body $i$. In Newtonian dynamics, the 
 \par \textcolor{red}{This part of the trajectory of an orbiting body is called ``periastron'', and corresponds to where along an eccentric orbit the orbital velocity is at a maximum.}.  
 \end{tcolorbox}
 
+
+\begin{tcolorbox}[sharp corners, colback=blue!30, colframe=blue!80!blue, title=Orbital Dynamics IIb]
+\par \textcolor{blue}{As alluded to before, Newton's equations of motion can be solved analytically for two bodies. We will discuss this here. \\ \\
+First, we will show that the problem of two bodies (with two position vectors, $\myvec{R}_1$ and $\myvec{R}_2$) can be reduced to effectively a one-body problem (with just one position vector, $\myvec{r}$). Let $\myvec{r} \equiv \myvec{R}_1 - \myvec{R}_2$. If we take Newton's equation of motion for $\myvec{R}_1$ and $\myvec{R}_2$ and subtract them, we get
+\begin{align}
+\label{Chap3:Eq:2b_EOM_r}
+\ddot{\myvec{r}} &= \ddot{\myvec{R}}_1 - \ddot{\myvec{R}}_2 =  -\gconst (m_1+m_2)  \frac{\myvec{r}}{r^3}.
+\end{align}
+Here, we use dots to denote time derivatives. Once we know how $\myvec{r}$ evolves, we can get the motion of the individual bodies 1 and 2 through the relations
+\begin{subequations}
+\label{Chap3:Eq:R_r_relations}
+\begin{align}
+\myvec{R}_1 &= \myvec{r}_\mathrm{CM} + \frac{m_2}{m_1+m_2} \myvec{r}; \\
+\myvec{R}_2 &= \myvec{r}_\mathrm{CM} - \frac{m_1}{m_1+m_2} \myvec{r}.
+\end{align}
+\end{subequations}
+Here, $\myvec{r}_\mathrm{CM}$ is the {\it center of mass} position vector given by
+\begin{align}
+\label{Chap3:Eq:r_CM_def}
+\myvec{r}_\mathrm{CM} \equiv \frac{m_1 \myvec{R}_1 + m_2 \myvec{R}_2}{m_1+m_2}.
+\end{align} 
+There are various ways to derive the solution for $\myvec{r}(t)$. Here, we will not discuss how to derive the result, but just mention it. Note that the solution can be checked by plugging it into the equation of motion, \Eq~(\ref{Chap3:Eq:2b_EOM_r}). The result is:
+\begin{align}
+\label{Chap3:Eq:r_sol}
+\myvec{r}(t) = r(t) \left [ \cos(\TA) \, \unit{e} + \sin(\TA) \, \unit{q} \right ].
+\end{align}
+Here, $r(t)$ is the magnitude of $\myvec{r}(t)$ given by
+\begin{align}
+r(t) = \frac{a \left(1-e^2\right)}{1 + e \cos (\TA)},
+\end{align}
+with $a$ and $e$ the orbital semimajor axis and eccentricity, respectively (constants of the motion), whereas $\TA$ is the {\it true anomaly} that characterizes the orbital phase. Note that the closest approach in the orbit, the periapsis, corresponds to $\TA=0$ with separation $r_\mathrm{p} = a(1-e)$. The largest separation (apoapsis) is reached when $\TA=\pi$, with $r_\mathrm{a} = a(1+e)$. \\ \\
+There are two more constant quantities in \Eq~(\ref{Chap3:Eq:r_sol}): $\unit{e}$, and $\unit{q}$. The former, $\unit{e}$, is the {\it eccentricity vector} that points along the {\it line of apsides}, the line connecting the periapsis (point of closets approach in the relative orbit) and apoapsis (point of furtest approach in the relative orbit). The vector $\unit{q}$ is perpendicular to both $\unit{e}$ and $\unit{l}$, where $\unit{l}$ points along the angular momentum of the orbit. In vector notation: $\unit{q} = \unit{l} \times \unit{e}$. Note that $\unit{e}$, $\unit{l}$, and $\unit{l}$ are all constant in the two-body problem. }
+\end{tcolorbox}
+
+\begin{tcolorbox}[sharp corners, colback=blue!30, colframe=blue!80!blue, title=Orbital Dynamics IIb (continued)]
+\par \textcolor{blue}{The relation between physical time $t$ and the true anomaly $\TA$ is described by the {\it Kepler equation}. First, we introduce another angle which described the orbital phase and is closely related to the true anomaly: the {\it eccentric anomaly}, $\EA$. The relation between $\TA$ and $\EA$ is given by
+\begin{align}
+\label{Chap3:Eq:EA_to_TA}
+\cos(\TA) = \frac{\cos(\EA) - e}{1 - e \cos(\EA)}; \qquad \sin(\EA) = \sqrt{1-e^2} \frac{\sin(\TA)}{1+e\cos(\TA)}.
+\end{align}
+The Kepler equation relates $\EA$ to time $t$ according to
+\begin{align}
+\label{Chap3:Eq:kep_eq}
+\EA - e \sin(\EA) = n(t-\tau).
+\end{align}
+Here, $n$ is the {\it mean motion} given by
+\begin{align}
+n \equiv \frac{2\pi}{P} = \sqrt{\frac{G(m_1+m_2)}{a^3}},
+\end{align}
+where $P$ is the orbital period, which is given by
+\begin{align}
+\label{Chap3:Eq:kepl}
+P = 2 \pi \sqrt{\frac{a^3}{G(m_1+m_2)}}.
+\end{align}
+Furthermore, $\tau$ is the time of periapsis passage, i.e, a reference time at which the orbit passes periapsis. 
+}
+\end{tcolorbox}
+
 %levelthree:
-\begin{tcolorbox}[sharp corners, colback=green!30, colframe=green!80!blue, title=Orbital Dynamics]
-\par \textcolor{green}{DISCUSS ORBITAL DYNAMICS, IN THE CONTEXT OF THE TWO-BODY PROBLEM.  DESCRIBE HOW FOR STABLE TRIPLES, TO FIRST ORDER, ONE CAN APPLY THE TWO-BODY PROBLEM TWICE, TAKING THE INNER BINARY AS A SINGLE OBJECT.}.  
+\begin{tcolorbox}[sharp corners, colback=green!30, colframe=green!80!blue, title=Orbital Dynamics IIc]
+\par \textcolor{green}{DISCUSS ORBITAL ANGLES. DISCUSS KEPLER SOLVER?}
+%DISCUSS ORBITAL DYNAMICS, IN THE CONTEXT OF THE TWO-BODY PROBLEM.  DESCRIBE HOW FOR STABLE TRIPLES, TO FIRST ORDER, ONE CAN APPLY THE TWO-BODY PROBLEM TWICE, TAKING THE INNER BINARY AS A SINGLE OBJECT.}.  
 \end{tcolorbox}
 
 \par \nar Each time they complete one orbital revolution, the two sisters drift a little bit closer to colliding directly with each.  On the whole, there was no mistaking the fact that their orbit was getting more compact...and fast.
@@ -168,9 +228,19 @@ where $\myvec{a}_i$ is the acceleration on body $i$. In Newtonian dynamics, the 
 
 %leveltwo:
 %\footnote{DEFINE TORQUE!}
-\begin{tcolorbox}[sharp corners, colback=blue!30, colframe=blue!80!blue, title=Torque]
-\par \textcolor{blue}{DEFINE TORQUE.}.  
+%\begin{tcolorbox}[sharp corners, colback=blue!30, colframe=blue!80!blue, title=Torque]
+%\par \textcolor{blue}{DEFINE TORQUE.}.  
+%\end{tcolorbox}
+
+\begin{tcolorbox}[sharp corners, colback=blue!30, colframe=blue!80!blue, title=Orbital dynamics IIIb]
+\par \textcolor{blue}{DEFINE TORQUE. BASIC PROPERTIES OF ZLK.}.  
 \end{tcolorbox}
+
+%levelthree:
+\begin{tcolorbox}[sharp corners, colback=green!30, colframe=green!80!blue, title=Orbital Dynamics IIIc]
+\par \textcolor{green}{DISCUSS IN DETAIL ZLK OSCILLATIONS: HAMILTONIAN, MAX ECC, ETC.}
+\end{tcolorbox}
+
 
 \par \Alcyone And why should we care about that?
 
