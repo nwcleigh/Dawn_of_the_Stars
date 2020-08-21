@@ -1,25 +1,15 @@
-\documentclass{book}
+\documentclass[fleqn]{book}
 \usepackage{subfiles}
 \usepackage{xspace}
-\usepackage{amsmath}
 \usepackage{footnote}
 \usepackage{xcolor}
 \usepackage{lipsum}
 \usepackage{lmodern}
-\usepackage{tcolorbox}
+\usepackage[many]{tcolorbox}
+\usepackage{amsmath}
+\usepackage{tikz,lipsum,lmodern}
+\usepackage{empheq}
 % put preamble here
-
-% Begin some stuff from Adrian
-\newcommand{\myvec}[1]{{\mathbf{#1}}}
-\newcommand\gconst{\mathcal{G}}
-\newcommand\note[1]{{\color{red}\bf Note: #1}}
-\newcommand{\Eq}{Eq.}
-\newcommand{\unit}[1]{\hat{\boldsymbol{#1}}}
-\newcommand{\TA}{\theta}
-\newcommand{\MA}{\mathcal{M}}
-\newcommand{\EA}{\mathcal{E}}
-% End some stuff from Adrian
-
 
 \newcommand{\levelone}[0]{{\color{red} \noindent \bf Narrator}}
 \newcommand{\leveltwo}[0]{{\color{blue} \noindent \bf Narrator}}
@@ -46,7 +36,9 @@
 \newcommand{\Chiron}[0]{{\noindent \bf Chiron }}
 \newcommand{\Hippe}[0]{{\noindent \bf Hippe }}
 \newcommand{\Lacedaemon}[0]{{\noindent \bf Lacedaemon }}
-\newcommand{\spanish}[0]{{\noindent \bf En espanol: }}
+\newcommand{\Alphab}[0]{{\noindent \bf Alpha }}
+\newcommand{\Betab}[0]{{\noindent \bf Beta }}
+\newcommand{\Deltab}[0]{{\noindent \bf Delta }}
 \newcommand{\rmpleione}[0]{Pleione}
 \newcommand{\rmmaia}[0]{Maia}
 \newcommand{\rmsterope}[0]{Sterope}
@@ -69,6 +61,9 @@
 \newcommand{\rmhippe}[0]{Hippe}
 \newcommand{\rmlacedaemon}[0]{Lacedaemon}
 \newcommand{\rmaldebarran}[0]{Aldebarran}
+\newcommand{\rmalpha}[0]{Alpha}
+\newcommand{\rmbeta}[0]{Beta}
+\newcommand{\rmdelta}[0]{Delta}
 
 
 
@@ -81,8 +76,8 @@
 \subfile{chapter1new}
 \subfile{chapter2new}
 \subfile{chapter3new}
-\subfile{chapter4}
-\subfile{chapter5}
+\subfile{chapter4new}
+\subfile{chapter5new}
 \subfile{chapter6}
 \subfile{chapter7}
 \subfile{chapter8}
