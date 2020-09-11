@@ -118,7 +118,7 @@ First, we will show that the problem of two bodies (with two position vectors, $
 \label{Chap3:Eq:2b_EOM_r}
 \ddot{\myvec{r}} &= \ddot{\myvec{R}}_1 - \ddot{\myvec{R}}_2 =  -\gconst (m_1+m_2)  \frac{\myvec{r}}{r^3}.
 \end{align}
-Here, we use dots to denote time derivatives (so two dots means taking the second time derivative). Once we know how $\myvec{r}$ evolves, that is, we have the solution $\ve{r}(t)$, we can get the motion of the individual bodies 1 and 2 through the relations
+Here, we use dots to denote time derivatives (so two dots means taking the second time derivative). Once we know how $\myvec{r}$ evolves, that is, we have the solution $\myvec{r}(t)$, we can get the motion of the individual bodies 1 and 2 through the relations
 \begin{subequations}
 \label{Chap3:Eq:R_r_relations}
 \begin{align}
@@ -164,7 +164,7 @@ where $P$ is the {\it orbital period}, given by
 \label{Chap3:Eq:kepl}
 P = 2 \pi \sqrt{\frac{a^3}{G(m_1+m_2)}}.
 \end{align}
-Furthermore, $\tau$ is the time of periapsis passage, i.e, a reference time at which the orbit passes periapsis. The combination $n t$ (or $nt - n\tau$) is known as the `mean motion' $\MA$. We note that \eq~(\ref{Chap3:Eq:kep_eq}) has no simple solutions for $\EA$ for a given $t$ (except in the trivial case of circular orbits, $e=0$). Generally, it has to be solved numerically, for example, by means of {\it Newton iteration}.}
+Furthermore, $\tau$ is the time of periapsis passage, i.e, a reference time at which the orbit passes periapsis. The combination $n t$ (or $nt - n\tau$) is known as the `mean motion' $\MA$. We note that \Eq~(\ref{Chap3:Eq:kep_eq}) has no simple solutions for $\EA$ for a given $t$ (except in the trivial case of circular orbits, $e=0$). Generally, it has to be solved numerically, for example, by means of {\it Newton iteration}.}
 \end{tcolorbox}
 
 %levelthree:
@@ -207,12 +207,12 @@ The reverse operation (from orbital elements to orbital vectors) is described by
 }
 \end{tcolorbox}
 
-\begin{tcolorbox}[sharp corners, colback=green!30, colframe=green!80!blue, title=Orbital Dynamics IIc]
+\begin{tcolorbox}[sharp corners, colback=green!30, colframe=green!80!blue, title=Orbital Dynamics IIc (continued)]
 \par \textcolor{green}{As also discussed in Orbital Dynamics IIb, the {\it Kepler} equation cannot be solved analytically in general. A useful method to solve it numerically is using {\it Newton iteration}. The latter is formulated as follows: let $f(x)$ be a function of $x$, and we wish to know the value of $x=x_0$ such that $f(x_0)=0$. We can then apply an iterative scheme based on the derivative of $f(x)$: 
 \begin{align}
 x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}.
 \end{align}
-In our case, to solve \eq~(\ref{Chap3:Eq:kep_eq}), we can write $f(\EA) = \EA - e \sin(\EA) - \MA$ where $\MA = n(t-\tau)$, such that
+In our case, to solve \Eq~(\ref{Chap3:Eq:kep_eq}), we can write $f(\EA) = \EA - e \sin(\EA) - \MA$ where $\MA = n(t-\tau)$, such that
 \begin{align}
 \EA_{n+1} = \EA_n - \frac{\EA - e \sin(\EA) - \MA}{1 - e \cos(\EA)}.
 \end{align}
@@ -220,8 +220,15 @@ In our case, to solve \eq~(\ref{Chap3:Eq:kep_eq}), we can write $f(\EA) = \EA - 
 \end{tcolorbox}
 
 
-\begin{tcolorbox}[sharp corners, colback=red!30, colframe=red!80!blue, title=Orbits in hierarchical triples]
-\par \textcolor{red}{DESCRIBE BASICS OF ORBITS IN TRIPLES}.  
+\begin{tcolorbox}[sharp corners, colback=blue!30, colframe=blue!80!blue,  title=Orbits in hierarchical triples]
+\par \textcolor{blue}{ In a hierarchical triple system, two objects orbit each other in a relatively tight orbit (the ``inner orbit''), whereas a third object orbits the former two objects' center of mass in a wider orbit (the ``outer orbit''). If the inner orbit is sufficiently more compact than the outer orbit, the system can remain stable on long time-scales. On short time-scales, the orbits are nearly Keplerian. At any given time, one can define ``oscullating'' orbital elements. If the third object were instantaneously removed, the inner orbit would be perfectly Keplerian and its orbital elements would be the oscullating elements. \\ \\
+It is generally hard to predict exactly whether or not a given hierarchical triple is stable or not. First, there is no unique way of defining stability. In a stable system, the energies (and hence semimajor axes) of the inner and outer orbits do not change systematically over time. However, they can change on shorter time-scales as the bodies move in their nearly-Keplerian orbits. These changes in the (oscullating) orbital elements increase in magnitude as the triple becomes more compact (i.e., the inner and outer orbital separations become more comparable and so the tertiary star aproaches the inner binary at closer and closer periapsis distances).  Also, the notion of stability depends on what timescale one requires the triple to be stable, since chaos in three-body systems can lead to destabilization of the system on timescales that are much longer than the orbital timscales. \\ \\
+Nevertheless, several usuful analytic criteria have been developed that can be used to predict stability of a given system. A well known and widely used criterium is that of Marding and Aarseth \citep{}, which reads \\ \\
+\begin{align}
+\frac{a_{\mathrm{out}}(1-e_{\mathrm{out}})}{a_{\mathrm{in}}} > 2.8 \left [ (1 + q_{\mathrm{out}}) \frac{1+e_{\mathrm{out}}}{(1 - e_{\mathrm{out}})^{1/2}} \right ]^{2/5} \left (1 - \frac{0.3 i_{\mathrm{rel}}}{180} \right ).
+\end{align}
+Here, subscripts `in' and `out' refer to the the inner and outer orbits, respectively. The mass ratio $q_{\mathrm{out}}$ is defined as $q_{\mathrm{out}} \equiv m_3/(m_1+m_2)$, where $m_1$ and $m_2$ are the masses of the two components in the inner binary, and $m_3$ is the mass of the third body. The mutual inclination between the inner and outer orbits is $i_{\mathrm{rel}}$, and it affects stability in addition to the semimajor axes and eccentricities.
+}
 \end{tcolorbox}
 
 \par \nar Each time they complete one orbital revolution, the two sisters drift a little bit closer to colliding directly with each.  On the whole, there was no mistaking the fact that their orbit was getting more compact...and fast.
