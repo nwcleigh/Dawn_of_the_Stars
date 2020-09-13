@@ -1,196 +1,231 @@
 \documentclass[main.tex]{subfiles}
+\usepackage[T1]{fontenc}
+\usepackage{ae,aecompl}
+
+
+%%%%% AUTHORS - PLACE YOUR OWN PACKAGES HERE %%%%%
+
+% Only include extra packages if you really need them. Common packages are:
+\usepackage{graphicx}	% Including figure files
+\usepackage{amsmath}	% Advanced maths commands
+\usepackage{amssymb}	% Extra maths symbols
+
+
+%\newcommand\levelone[1]{{\color{red}\bf}}
+%\newcommand\leveltwo[1]{{\color{blue}\bf}}
+%\newcommand\levelthree[1]{{\color{green}\bf}}
 \begin{document}
 
-\chapter{The Triplets...}
 
-%THIS CHAPTER DESCRIBES THE OUTER TRIPLE EXCITING LK OSCILLATIONS IN THE INNTER TWO BINARY COMPONENTS, EVENTUALLY CAUSING THEM TO MERGE IN A HORRIFIC AND GORY FINAL FATE.  THE NEW EMERGING SIBLING, WHILE MUCH MORE MASSIVE, IS SWEET AND KIND, AND TWEEDLEDOH IS VERY HAPPY TO MEET HIS NEW SISTER TWEEDLEDAH.
- 
-%Alone at last ...well, depending on how you looked at it.  
-\par \nar Now gravitationally unbound from their siblings, \rmtaygete, \rmalcyone~ and \rmcelaeno~ find themselves drifting off in to the vastness of empty space.  
+%INSERT NEW CHAPTER 2 HERE.
+
+\chapter{A Gust of Wind...}
+
+\par \nar \rmsterope~ awoke when a gust of wind brushed past her face.  The gas was dense enough to temporarily obscure her vision.  She could feel the wind on her face as it rushed past, gently caressing her fiery skin.  All in all, the wind carried enough momentum to startle her out of slumber,
+
+%\leveltwo{
+\begin{tcolorbox}[sharp corners, colback=blue!30, colframe=blue!80!blue, title=Linear Momentum]
+\par \textcolor{blue} {The momentum $\vec{p}$ an object possesses is defined as the product of the object's mass and its velocity, or:
+\begin{equation}
+%\begin{center}
+\vec{p} = m\vec{v}.
+%\end{center}
+\end{equation}
+Momentum is in many ways complementary to the term inertia; momentum quantifies how difficult it is to alter an object's trajectory.  The more momentum an object possesses, the larger the total applied force must be (over a given interval of time) in order to change the object's trajectory.  More specifically, the total change in momentum can be calculated using the product of the applied force and the total time spent applying that force to the object.  The corresponding change in momentum is larger if either the magnitude of the applied force is larger, or the total time spent applying that force is longer.}.  
+\end{tcolorbox}
+
+\par \nar \rmsterope~ coughed, clearing the gas from her face.  Her surroundings now revealed, \rmsterope~ looked around, confirming her suspicions; the gas had become substantially less dense, now disconcertingly sparse, since she had fallen asleep. 
+
+%\levelone{
+\begin{tcolorbox}[sharp corners, colback=red!30, colframe=red!80!blue, title=Mass Density]
+\par \textcolor{red} {\nar Density is defined as the total amount of mass per unit volume; lower densities imply less mass occupies a given unit of 3-D volume.  Consider a spherical volume of radius $r$ with constant mass density $\rho$ and containing a total mass $M$.  In this simple case, the mass density is:
+\begin{equation}
+\rho = \frac{4M}{3{\pi}r^3}
+\end{equation}
+}  
+\end{tcolorbox}
+%Something was causing the remaining gas to leave, and fast.
+
+\par \Sterope My sisters, you must wake up!  The remnants of our Mother are leaving us.
+
+\par \nar The other six siblings awoke to the scene described by \rmsterope.  
+
+\par \Electra Whoa!  What's going on?  We're all drifting apart.  And where did Mother go?
+
+\par \Maia It's okay, young ones.  The last vestiges of Mother have now left us.  Upon giving birth to us, she activated our metabolisms.  We've been spewing light out ever since, in the form of photons.  Each photon carries momentum, and transfers some of it to any gas molecule or atom upon collision.  Light has been banging in to the gas and dust of our Mother for quite some time now, pushing her outward and away.
+
+%\levelone{
+\begin{tcolorbox}[sharp corners, colback=red!30, colframe=red!80!blue, title=Momentum Carried by Light]
+\par \textcolor{red} {``Radiation pressure'', they call it.}
+\end{tcolorbox}
+
+\par \Electra Okay, but then why are \textit{we} drifting apart from \textit{each other}?
+
+\par \Maia Mother was made up of gas and dust, which came along with significant \textit{mass}.  And with mass comes gravity.  Now that her mass is gone, it can no longer contribute to the inward pull of gravity.
+
+%\levelone{
+\begin{tcolorbox}[sharp corners, colback=red!30, colframe=red!80!blue, title=Gravitational Potential Energy]
+\par \textcolor{red} {Gravity provides an attractive force that keeps mass effectively "glued" together.  The strength of this glue is often quantified by something called the gravitational potential energy of the system, often denoted $V$.  Consider a distribution of $N$ identical particles, each with a mass $m_{\rm i}$.  The total system mass is $M = Nm_{\rm i}$.  Let us also assume that the mass distribution is spherically symmetric, for simplicity.  The mass distribution defines the gravitational field, which is a function only of the distance $r$ from the system center of mass due to our assumption of spherical symmetry.  At every point in the gravitational field, the gravitational force exerted on particle $i$ is:
+\begin{equation}
+\vec{F}_{\rm i} = m_{\rm i}\frac{d^2{r_{\rm i}}_{\rm i}}{dt^2} = -Gm_{\rm i}\sum_{\rm j=1,j \ne i}^{\rm N}m_{\rm j}\frac{\vec{r_{\rm i}} - \vec{r}_{\rm j}}{|\vec{r_{\rm i}} - \vec{r_{\rm j}}|^3},
+\label{eqn:force}
+\end{equation}
+where $t$ denotes time.  Note that the gravitational force $\vec{F}_{\rm i}$ is a vector quantity, and so a direction must be specified for the applied acceleration.  The gravitational force is equal to the gradient of the gravitational potential at the location of the particle, or:
+\begin{equation}
+\nabla_{\rm i}V = \vec{F}_{\rm i}.
+\end{equation}
+We can compute the total gravitational potential energy of the system by summing over all particles:
+\begin{equation}
+V = -\frac{1}{2}\sum_{\rm j=1}^{\rm N}\sum_{\rm k=1, k \ne j}^{\rm N}\frac{m_{\rm j}m_{\rm k}}{|\vec{r_{\rm j}} - \vec{r_{\rm k}}|}.
+\end{equation}
+Potential energy is by definition a negative quantity.}
+\end{tcolorbox}
+
+
+\par \Maia In other words, without our dispersed Mother, between the seven of us we no longer have enough mass in our mutually occupied volume to keep us gravitationally bound.  We are now free to drift apart.  And drift apart we are destined to do. 
+
+%leveltwo
+
+\par \Taygete Yeah, yeah, yeah.  But what does all that even \textit{mean}?
+
+\par \Sterope I think it means that this is goodbye...  With our Mother's mass now lost, we are no longer gravitationally bound.  Relative to each other, we are energetically \textit{unbound}.
+
+%\leveltwo{
+\begin{tcolorbox}[sharp corners, colback=blue!30, colframe=blue!80!blue, title=Kinetic Energy]
+\par \textcolor{blue} {In addition to the gravitational potential energy, particles have individual kinetic energies which can be summed over to compute a total kinetic energy for the system, usually denoted as $T$.  In our hypothetic spherically symmetric distribution of particles, gravity is causing the particles to move around within the gravitational potential with finite velocities.  These particles are orbiting within the gravitational field of the system, since gravity imparts unto every particle an acceleration at every instant in time.  The kinetic energy of a given particle is proportional to the square of its velocity $v_{\rm i}$ relative to the system center of mass.  By summing over all particles, we can compute the total kinetic energy of the system:
+\begin{equation}
+T = \sum_{\rm i}^{N} T_{\rm i} = \frac{1}{2}m_{\rm i}v_{\rm i}^2
+\end{equation}
+Kinetic energy is by definition a positive quantity.}  
+\end{tcolorbox}
+
+\begin{tcolorbox}[sharp corners, colback=blue!30, colframe=blue!80!blue, title=Total Energy]
+\par \textcolor{blue} {The total system energy, usually denoted $E$, is defined as the sum of the total kinetic and gravitational potential energies, or:
+\begin{equation}
+E = T + V.
+\end{equation}
+The total system energy can be either positive or negative.  The zero-energy boundary (i.e., $E = 0$) is critical to deciding the ultimate fate of a self-gravitating system of particles.}  
+\end{tcolorbox}
 
-\section{Two's Company, Three's a Crowd}
+\begin{tcolorbox}[sharp corners, colback=blue!30, colframe=blue!80!blue, title=Gravitational Binding Energy]
+\par \textcolor{blue} {If the total system energy is negative, then the system is said to be gravitationally bound.  In practice, this means that the self-gravitating system will not disperse on a short timescale.  For positive total energies, the particles will begin to move farther and farther away from each other, until eventually they are hardly interacting via gravity at all.  This is because the typical relative distance between particles grows over time, reducing the denominator in Equation~\ref{eqn:force} and along with it the gravitational acceleration acting on each particle.  For negative total energies, the particles will remain grouped closely together, and continue to interact strongly due to gravity.  The system remains effectively "glued" together for a much longer period of time relative to analogous systems with positive total energies.  It is important to note, however, that in nature the system is never truly isolated and can lose mass over time.  This changes the total kinetic and potential energies, and the total system energy can change from negative to positive.  This marks the critical transition at which point infant star clusters enter a state of rapid dispersal or dissociation.}
+%DERIVE CONDITION FOR A CLUSTER TO REMAIN BOUND.  EXTEND DERIVATION SO THE SOLUTION IS GIVEN AS A FUNCTION OF THE FRACTION OF ITS INITIAL MASS LOST. Quantify the timescale, and then relate it back to the lifetimes of the seven sisters to show that the cluster will disperse on a timescale much shorter than their lifetimes.}   
+\end{tcolorbox}
 
-\par \nar Three siblings alone at last.  Well, two twins and a target: the inner twins continued to gossip rudely about their outer, omni-present sister.
+%\begin{tcolorbox}[ams equation,sharp corners, colback=blue!30, colframe=blue!80!blue, title=Virial Theorem]
+\begin{tcolorbox}[sharp corners, colback=blue!30, colframe=blue!80!blue, title=Virial Theorem]
+\par \textcolor{blue} {If the total energy is negative, then it would seem that gravity out balances the effective outward pressure or heat provided by the particle kinetic energies.  So what prevents the whole system from collapsing inward to a singular point at the system center of mass?  This is where the Virial Theorem comes in, which provides a simple relation between the total kinetic and potential energies.  In its simplest form, the Virial Theorem states that for a self-gravitating system of particles, twice the total time-averaged kinetic energy plus the total time-averaged gravitational potential energy is equal to zero.  To see why this is the case, let us once again consider a self-gravitating system of $N$ particles.  For the $i$-th particle, we let the mass, distance from the system center of mass, velocity relative to the center of mass and linear momentum be denoted, respectively, $m_{\rm i}$, $\vec{r}_{\rm i}$, $\vec{v}_{\rm i}$ and $\vec{p}_{\rm i}$.   Now, we define the following quantity:
+\begin{equation}
+H = \sum_{\rm i=1}^{\rm N} \vec{p}_{\rm i} \bullet \vec{r}_{\rm i}.
+\end{equation}
+Differentiating with respect to time gives:
+\begin{equation}
+\frac{dH}{dt} =  \sum_{\rm i=1}^{\rm N} \frac{d\vec{p}_{\rm i}}{dt} \bullet \vec{r}_{\rm i} + \sum_{\rm i=1}^{\rm N} \vec{p}_{\rm i} \bullet \frac{d\vec{r}_{\rm i}}{dt}.
+\end{equation}
+With a few simple substitutions, this becomes:
+\begin{equation}
+\frac{dH}{dt} =  \sum_{\rm i=1}^{\rm N} \vec{F}_{\rm i} \bullet \vec{r}_{\rm i} + \sum_{\rm i=1}^{\rm N} m_{\rm i}\vec{v}_{\rm i}^2,
+\end{equation}
+since $\vec{F}_{\rm i} = d\vec{p}_{\rm i}/dt$ and $\vec{p}_{\rm i} = m_{\rm i}\vec{v}_{\rm i} = m_{\rm i}\frac{d\vec{r}_{\rm i}}{dt}$,
+which can be re-written as:
+\begin{equation}
+\frac{dH}{dt} =  \sum_{\rm i=1}^{\rm N} \vec{F}_{\rm i} \bullet \vec{r}_{\rm i} + 2K.
+\label{eqn:dhdt}
+\end{equation}
+Now, in order to arrive at the Virial Theorem, we must take a time-average of the above equation.  First, note that in general, the time-average of a variable $x$ is:
+\begin{equation}
+\bar{x} = \frac{1}{\tau}\int_{0}^{\rm \tau} x(t)dt.
+\end{equation}
+Hence, the time-average of the left-hand side of Equation~\ref{eqn:dhdt} is:
+\begin{equation}
+%\begin{empheq}
+\bar{\frac{dH}{dt}} = \frac{1}{\tau}\int_{0}^{\rm \tau} [H(\tau) - H(0)].
+%\end{empheq}
+\end{equation}
+Thus, for example, if the system is periodic and returns to its initial state after some time interval, then $\tau$ can be chosen to be equal to the characteristic period such that $\bar{dH/dt} = 0$.  Other reasons exist why $\bar{dH/dt} = 0$ might apply.  For example, if the system state is non-periodic but instead long-lived while remaining approximately stable, or at least deviations from the initial state are not too extreme, then over long timescales we have $\bar{dH/dt} \rightarrow 0$.  In the end, taking a time-average of Equation~\ref{eqn:dhdt} and setting the result equal to zero yields:
+%\footnote{We note that this derivation is valid only for power-law potentials of the general form $V(r) = {\beta}r^{\alpha}$.}
+\begin{equation}
+2\bar{K} + \bar{U} = 0.
+\label{eqn:vir}
+\end{equation}
+Equation~\ref{eqn:vir} is the Virial Theorem for a self-gravitating system of particles.}
+%\end{tcolorbox}
+\end{tcolorbox}
 
-\par \Taygete She's a little bulbous don't you think?
+\par \Sterope I am fated to wander independently through the Cosmos.  Utterly and completely alone.  Well, except for \rmmaia~ and \rmmerope, I suppose, who form a binary.  Oh, and the triplets.  Those three are also still gravitationally bound.
 
-\par \Alcyone  Ha ha.  Yeah, you nailed it!
+\par \nar \rmalcyone's shoulders slump.  She begins to cry.
 
-\par \Celaeno  I can \textit{still} hear you two.  And I am \textit{not} bulbous.  A little round perhaps, but never bulbous.  And I shine brighter than either one of you.  So take that!
+\par \Alcyone Already, I miss each and every one of you.
 
-\par \Alcyone You may shine brighter than each of us individually, but together \textit{we} outshine \textit{you}.  
+\par \Taygete Well, at least you have me.
 
-\par \Taygete Yeah!  Take \textit{that}!
+\par \nar \rmalcyone rolls her eyes.
 
-\par \nar \rmcelaeno~ lets out a long, exasperated sigh.
+\par \Taygete Hey!  I saw that!
 
-\par \Celaeno My sisters, I really don't want to fight with you.  First, we're sisters from the same Mother.  Second, we're pretty much stuck together in this configuration for the next several hundred million years.  So we had might as well make the most of it.
+\par \Alcyone I'm sorry, sister.  You are right.  I am grateful for your presence.  Even if it \textit{is} all the time.  Without any breaks.  Ever.
 
-\par \Taygete \textit{Fat} chance, you bulbous sphere!
+\par \Maia I'm afraid \rmalcyone~ is right.  It is now time for each of us to follow our own paths through the Universe.  Or, equivalently, to follow our own trajectories through space-time.  At least in your case, \rmtaygete~, your sister \rmalcyone~ will be accompanying you.
 
-\par \Alcyone Ah ha, another good one, sister!
+\par \Electra Hold on a second!  I don't like the sound of this one bit!
 
-\par \Celaeno Well, fine.  I guess I'll take a nap then.  Better than listening to the two of you...
+\par \Sterope Me neither! \rmelectra~ and I are going to be completely alone!
 
-\section{The Demise of \rmtaygete~ and \rmalcyone}
+\par \Alphab AHEM!
 
-\par \nar After some time, \rmcelaeno~ awoke from a peaceful slumber.  
+\par \Betab You will have us with you, Mother!  We will follow you on your journeys!
 
-\par \Celaeno Yaaaaawn... What a lovely day, wouldn't you say, \rmtaygete~ and \rmalcyone?
+\par \Sterope Of course, I do apologize.  Your words comfort me, thank you.  And \rmelectra~ will of course have the companionship or her three planets and moon, as soon as they finish forming from the protoplanetary disk around her equator.
 
-\par \nar \rmcelaeno~ turned her gaze toward her sisters, but was horrified by what she saw.  Her sisters' relative distance\footnote{In other words, the distance separating their respective centers of mass.} had changed over the course of their slumber.  It had gone \textit{down}, in fact.  They were now closer than ever before.  What's more, it seemed to \rmcelaeno that the relative angle of inclination between the inner orbital plane formed by her sisters's orbital plane and her own outer orbital plane had changed.  They were now much more co-planar than before.\footnote{That is, all three stars orbiting within the same 2-D plane.}  In fact, currently, \rmcelaeno~ could only see \rmalcyone~ directly; presumably, \rmtaygete~ was behind \rmalcyone, her light being eclipsed by the foreground presence of her twin sister, along the line of sight separating her from \rmcelaeno.
+\par \Electra I am sure that together, my satellites and I will meet all sorts of interesting characters, maybe even make a few new friends along the way.  
 
-\par \nar Rather crucially, \rmtaygete~ and \rmalcyone~ now shared a much more eccentric orbit than before.\footnote{The Earth orbits about the Sun on a roughly circular orbit, such that its distance from the Sun does not change much over the course of a year.  Hence, a reasonable approximation here for most purposes is that the Earth's orbital eccentricity is nearly zero, or e $\sim$ 0.  This is not the case for every orbit, however.  Some orbits have non-zero eccentricities, orbiting their centers of mass on elliptic orbits.  In the limit e $=$ 1, the two bodies orbit each along a straight line, and are doomed to crash into each other and collide for negative total orbital energies.}  In particular, they now swung out to larger relative distances with respect to their common center of mass; here, they sit patiently due to their much slower orbital velocities \footnote{This part of the trajectory of an orbiting body is called ``apoastron'', and corresponds to where along an eccentric orbit the orbital velocity is at a minimum.}.  But, they eventually swing to much closer approaches than before, their surfaces almost touching at the point of closest approach\footnote{This part of the trajectory of an orbiting body is called ``periastron'', and corresponds to where along an eccentric orbit the orbital velocity is at a maximum.}.  Each time they complete one orbital revolution, the two sisters drift a little bit closer to colliding directly with each.  On the whole, there was no mistaking the fact that their orbit was getting more compact...and fast.
+\par \nar Both \rmsterope~ and \rmelectra~ lock eyes, exchanging a sympathetic glance as they continue to drift apart.  
+%They drift farther and farther away from their sisters and each other.
 
-\par \nar After a particularly close periastron passage, \rmtaygete~ too began to notice the changes.
+\par \Maia Do not worry, my fresh new stars. This is all a part of the Circle of Life.  As are you.  Something tells me it will not be long before you hear from me again. Keep your eyes peeled to the horizon, and I will soon be there.  
 
-\par \Taygete  Whoa!  What the hell is going on?!  I almost just collided with \rmalcyone!
+\par \Electra Sigh...  
 
-\par \Alcyone Ah, yeah no kidding!  What the hell \textit{is} going on?!  Don't get so close to me the next time you pass back around...
+\par \Taygete So... Uh... Wow.  This is awkward.  I guess we'll see you guys later.  I'm not sure how or when that will happen.  I can only assume it will involve some miraculous and possibly mysterious act of fate.  But I'm sure it \textit{will} happen.
+  
+\par \nar \rmtaygete~ and \rmalcyone~ snicker quietly to themselves, exchanging a glance of mutual understanding.  Ever the pessimists.  \rmelectra~ begins to cry.  \rmsterope~ joins suit.  They cry together for a while, before \rmsterope~ stops and says to her sister, sniffling loudly:
 
-\par \Taygete It's not like I am doing it on purpose...
+\par \Sterope Do not worry, \rmelectra.  It is an exciting time!  A new chapter in our lives.  What adventures will befall us?  What obstacles will we overcome?  
 
-\par \Celaeno  Well, don't panic just yet.  We need to figure this out, since I can't very well run off to bring back help.
+\par \nar \rmelectra~ interrupts her sister, the sarcasm rich in her voice:
 
-\par \Alcyone Useless to the bitter end...
+\par \Electra How many times will I be overwhelmed by the situation, unsuccessfully trying to manage my anxiety by crying and blubbering uncontrollably? I \textit{can't wait} to find out!
 
-\par \Celaeno Cram it.  
+\par \nar Despite the brave face, \rmmaia~ was every bit as terrified as her sisters.  The oldest among them, \rmmaia intently sought to calm her panicking siblings as she slowly drifted from view.
 
-\par \Alcyone Wait... Cram what exactly?
+\par \Taygete Well, \rmalcyone.  It looks like we're stuck with 'ol \rmcelaeno~ over there.
 
-\par \Celaeno Your mouth.  
+\par \Alcyone Yep, looks like it.  She was already gravitationally bound to us pretty significantly before the gas left, so I guess it's no surprise that she's still here.  Perhaps a disappointment, but not a surprise.
 
-\par \Alcyone With what?
+\par \Celaeno Heeeeelllloooo over there!  Did you know that I can hear you?  I wish I couldn't.  But I can.  
 
-\par \Celaeno Anything that prevents you from talking.  
+\par \Taygete We know. 
 
-\par \Alcyone I see.  You do realize we are floating in the emptiness of an infinite vacuum, right?  It's slim pickings I am afraid, at least in so far as cramming materials are concerned.
+\par \nar \rmtaygete~ and \rmalcyone~ exchange a wink of understanding.  \rmcelaeno~ mutters under her breath:
 
-\par \Celaeno Right, fair enough.  The point is:  stop being a jerk.  And while you are doing that, I am going to try to figure out a way to save you.  I suspect that the shift toward more co-planar orbits is directly related to the increase in your orbital eccentricity.  If you think about it, these two things in combination should conserve total angular momentum\footnote{DEFINE ANGULAR MOMENTUM AND CONSERVATION THEREOF.}, and might arise if the components of the inner orbit spend more or less time above or below the orbital plane of the outer orbit.\footnote{Sir Isaac Newton was among the first to consider the mutual gravitational interactions of a hierarchical triple star system.  He realized that, if the orbital plane of the inner compact binary is inclined relative to the outer orbit of the tertiary companion, then an asymmetry can arise where the components of the inner binary do not spend equal amounts of time above and below the orbital plane of the tertiary.  This provides a net torque on the inner binary, reducing its orbital inclination with respect to the outer tertiary orbital plane.  In order to conserve angular momentum, the eccentricity of the inner binary must increase, reaching a maximum when the orbital plane of the inner binary crosses that of the outer tertiary.  If the eccentricity gets to be sufficiently high, then the components of the inner binary can collide and merge.  For triples that do not undergo a collision in the inner binary, these oscillations in orbital inclination and eccentricity are nowadays called "Lidov-Kozai oscillations".} 
+\par \Celaeno I hate you.  Both.  Profoundly.
 
-\par \nar \rmcelaeno~ finds herself lost in thought.  Several minutes pass.  Finally, an epiphany strikes.
+\par \Taygete What was that?
 
-\par \Celaeno  Wait, I've got it!  I know what is going on!
+\par \nar \rmcelaeno~ speaks louder, so her sisters can hear:
 
-\par \Taygete  Super!  Well, please do enlighten us.
+\par \Celaeno I \textit{love} you both.  Profoundly.
 
-\par \Celaeno  Okay, so our unique three body configuration consists of two orbital planes.  You two orbit in one of those planes, and I orbit in another about our mutual center of mass along with the center of mass corresponding to the two of you.
+\par \Alcyone Aw.
 
-\par \Alcyone  You lost me.
 
-\par \Taygete Yeah, what's the point exactly?
+\textbf{NEED AN ILLUSTRATION OF THE CLUSTER DISSOLVING, AND THE SISTERS CLEARLY DRIFTING FAR APART (I.E., SOME VERY FAR AWAY, SOME STILL CLOSE AND IN THE FOREGROUND, AND SO ON.}
+%\begin{figure}
+%\includegraphics[width=\columnwidth]{fig3.png}
+%\caption{\rmmaia~ (blue), \rmelectra~ (red), \rmtaygete~ and \rmalcyone~ (both purple), \rmcelaeno~ (green) and \rmsterope~ (orange).  %Note that, as explained in the text, green and purple stars do not exist in the Universe.  Illustrations by Joshua Leigh.
+%\label{fig:fig3}}
+%\end{figure}
 
-\par \Celaeno The point is that your mutual orbital motion is such that its plane spends a net excess amount of time above or below my orbital plane.  It depends on our exact configuration, but that's the basic idea.  This is critical though, since it means that a net torque is being applied between our orbits.\footnote{DEFINE TORQUE!}
-
-\par \Alcyone And why should we care about that?
-
-\par \Celaeno Well, unless I miss my guess, this will cause your orbital plane to be torqued toward mine, so that we are in the end orbiting roughly co-planar to each other.  Unfortunately, in order to conserve total angular momentum, this also causes the eccentricity of your orbital motion to increase.  
-
-\par \Taygete  Huh?  Say that again?  How did you get so smart, anyways?
-
-\par \Celaeno Hmmm...I don't know.  We're all different, right? 
-
-\par \Alcyone Sure.
-
-\par \Taygete Why not?
-
-\par \Celaeno Okay, let's review.  Basically, I suspect that the shift toward more co-planar orbits is directly related to the increase in your orbital eccentricity, which we are clearly seeing.  If you think about it, these two things in combination should conserve the total angular momentum of our collective three-body system, and might arise naturally if the components of the inner orbit spend more time above (or below) the orbital plane of the outer orbit.  Apart from that, well, there's not much to say, really.  Your mutual periastron approach is already comparable to the sum of your radii.  And it is still decreasing due to the aforementioned effect.  And we haven't even considered tidal dissipation acting at periastron due to your \textit{extensive} radii being finite, which will only accelerate the rate of dissipation.\footnote{	DESCRIBE TIDAL DISSPATION, AND EXPLAIN WHY IT IS MOST RELEVANT AT PERIASTRON AND FOR OBJECTS WITH LARGES RADII.}  In short, you're about to collide with each other.  In fact, you'll probably merge.
-
-\par \Taygete  Wait, WHAT?!
-
-\par \Alcyone  WHAT?!
-
-\par \nar Just then, \rmtaygete~ smashes in to \rmalcyone~ as they both re-approach their mutual periastron passage.  The collision is violent; the relative velocity is of order the sum of their local orbital speed, which is several hundred kilometers per second.  Needless to say, the sisters never stood a chance.  Their innards and organs (i.e., massive globs of hot gas) are flung violently away from the merging pair.  It is a grizzly scene.
-
-\par \Celaeno Oh, Dear Lord!  I think I'm going to throw up.  SO MUCH PLASMA!  Gross, disgusting, and emotionally it's a lot to handle. ...Yep, here comes the vomit...
-
-\par \nar \rmcelaeno~ suddenly vomits, spraying a particularly potent coronal mass ejection (or CME, for short) in to her immediate vicinity.  The vomited CME extends in an arc spanning about 120 degrees due to \rmcelaeno's rapid rotation rate.
-
-\par \Celaeno Oooooooh my Gawd, they've got to be dead after that.  So gross!  
-
-\par \nar \rmcelaeno~ nearly vomits a second time, but manages to stifle the urge.
-
-\section{From the Ashes...} 
-
-\par \Celaeno ...Uh...I guess I should check to see if everybody is okay? ...CAN YOU HEAR ME?!  ARE YOU STILL THERE?! 
-
-\par \nar Gravity was in the process of taking the remains of what had once been \rmtaygete~ and \rmalcyone, and re-shaping them into a brand new star.  Formed from two stellar corpses, this new star was quickly turning out to be nearly twice as massive as each of his individual progenitors.  Suddenly, the product of this coalescence awoke.
-
-%was spinning rapidly, but not for long; intense magnetic fields had been amplified during the collision and were rapidly spinning the new star to lower rotational frequencies.  A few millions years from now, all signs of the simultaneous deaths of two brothers, needed to give life to a new sister, will have vanished. 
-
-\par \Lacedaemon Uh...Hello, there!  My name is...uh...\rmlacedaemon, I do believe.  I appear to be new to the scene...of which I know absolutely nothing about.  Where are we exactly?  Uh...\textit{What} are we?
-
-\par \Celaeno Hello!  You are my new brother.  We are stars; spheres of gas and dust contracting due to gravity into the configuration you see before you, which in turn rose the temperature in our cores \textit{a lot}.  We are slowly undergoing nuclear fusion in our bellies, converting hydrogen into helium and in the process emitting energy in the form of light or photons.  The outward momentum supplied by the photons provides the outward pressure we need to balance the inward force from gravity.  Mother called it ``hydrostatic equilibrium''.
-
-\par \Lacedaemon Wow, that was a lot of very technical information.  Still, I appreciate it very much!  In fact, I'm quite impressed.  Now that you mention it, I'm starting to feel very balanced overall.  
-
-\par \Celaeno I'm glad to hear it!
-
-\par \Lacedaemon ...Well, except for this excess rotation I seem to be holding on to. And it goes right to the belly, let me tell you.  Wow, this bulge is really extending outward at my equator.  SUPER!  
-%You look very svelt for a star, I must say.  I seem to be holding on to all this extra crud around my mid-center.  Rotational weight, that's the culprit.  Who would have guessed that angular momentum conservation would be this much work?
-
-\par \nar \rmlacedaemon~ rolls his eyes to accentuate the sarcastic remark.
-
-\par \Celaeno Don't worry, I've seen it lots of times before.  New stars spin down as they grow out of infancy.\footnote{ANGULAR MOMENTUM CONSERVATION DISCUSSION, in the context of spin!}  So, the ``belly'' will go away.  You'll settle in to a more sphere-like shape in no time.  I think the whole thing has something to do with ``magnetic fields'', or so I have heard.  As near as I can tell, this is some magical force that slows your spin rate down as you mature into a beautiful new star.
-
-\par \Lacedaemon Hey, alright!  Good news.  I'm sold.  I mean, who doesn't appreciate spherical symmetry?  Weirdos, that's who.  Uh...So now what?
-
-\par \nar \rmcelaeno~ liked her new brother, convinced she would appreciate having him around.
-
-\par \Celaeno We focus on the journey ahead, of course.  Who knows where our fate will take us.  But now that we are free of our siblings, I suppose almost anything \textit{could} happen.  Here is hoping for mostly good things!
-
-\par \Lacedaemon  Wow, this is exciting!  Do you suppose we will run in to our other siblings?
-
-\par \Celaeno Well, it's a big Galaxy out there, that much is for sure.  But, as I said, anything \textit{could} happen, especially given the long lives of stars.  
-
-\par \Lacedaemon We have that going for us!  Wait...Just how long are we talking about?
-
-\par \Celaeno Many millions or even billions of years.  In fact, I am guessing that somewhere out there are stars as old as the Galaxy itself.
-
-\par \Lacedaemon Wow!  By the time I'm that old, I hope to have toured the entire Galaxy....Twice!
-
-\par \Celaeno In that case, we had better get started.  The Galaxy sure isn't getting any smaller...
-
-%A worried expression became evident on $\Celaeno's$ face.  
-%
-%\Lacedaemon  You look like you just saw something terrifying.  What's up?
-%
-%\Celaeno  Well, if you take our current trajectory through the Galaxy and propagate it forward through time, it looks to me like we are ultimately heading for the Galactic Center.
-%
-%\Lacedaemon  Great!  Wait... What is a ``Galactic Center''?
-%
-%\Celaeno  It is the very center of our Galaxy.  Here, a dense nuclear star cluster lives, jam packed with stars spanning all sort of masses and ages.  We are in the field of our Galaxy currently, where the mean stellar density is about 1 star per cubic parsec.  For example the distance separating the Sun and her next nearest neighbor, Proxima Centauri, is about a parsec.  But if you take the Sun and Proxima Centauri as they are observed, and drop them in to the very central regions of the nuclear cluster at the heart of our Galaxy, then more than 100 stars will fall between the pair.  The densities are that much higher.  
-%
-%\Lacedaemon  Wow.  That sounds crowded.  I bet you can hear \textit{everything} \textit{everyone} is doing, at any given moment.  *shudders*  
-%
-%\Celaeno But the really terrifying thing, if you ask me, is the super-massive black hole lurking at the heart of the nuclear cluster.    
-%
-%\Lacedaemon Super-massive black hole, you say?  What the hell is that?
-%
-%\Celaeno It is a dense dark object that does not emit light, typically way smaller than Jupter in size.  But it's total mass can range anywhere from 10$^6$ to 10$^{10}$ times the mass of the Sun.  In our own Milky Way, the super-massive black hole is known to be about 4 $\times$ 10$^6$ times the mass of the Sun.
-%
-%\Lacedaemon Holy cow!  That sounds....potentially violent.
-%
-%\Celaeno Uh... Yeah, it is.  Technically, if you wander too close to a super-massive black hole, it can eat you whole.  And, once inside its belly, you can never escape.
-%
-%\Lacedaemon  Oh, wonderful!  That doesn't sound even remotely terrifying...
-%
-%\Celaeno Um... And even if you don't get eaten, if you do wander close to a super-massive black hole, you are almost certainly going to get accelerated to extremely high velocities.  Like, we are talking thousands of kilometers per second.  
-%
-%\Lacedaemon  WHAT?!  Is that even possible?
-%
-%\Celaeno  Yep, such fast stars have definitely been seen whipping by in our very own Galaxy.  
-%
-%\Lacedaemon Well, this is all very terrifying.  How can we possibly prepare for a journey through the central nuclear star cluster of the Milky Way?
-%
-%\Celaeno Well, I'm going to take another nap, personally.  I figure we'll need to be fresh and alert, if nothing else.
-%  
-%
-%\Lacedaemon Oh my gawd, you don't have a plan!  We are so going to die!
-%
-%$\Celaeno$ had already fallen asleep, and was now snoring loudly.
 
 \end{document}
-
-  
-
