@@ -8,7 +8,7 @@
 %THIS CHAPTER DESCRIBES THE OUTER TRIPLE EXCITING LK OSCILLATIONS IN THE INNTER TWO BINARY COMPONENTS, EVENTUALLY CAUSING THEM TO MERGE IN A HORRIFIC AND GORY FINAL FATE.  THE NEW EMERGING SIBLING, WHILE MUCH MORE MASSIVE, IS SWEET AND KIND, AND TWEEDLEDOH IS VERY HAPPY TO MEET HIS NEW SISTER TWEEDLEDAH.
  
 %Alone at last ...well, depending on how you looked at it.  
-\par \nar Now gravitationally unbound from their siblings, \rmtaygete, \rmalcyone~ and \rmcelaeno~ find themselves drifting off in to the vastness of empty space.  
+\par \nar Now gravitationally unbound from their siblings, \rmtaygete, \rmalcyone~ and \rmcelaeno~ find themselves drifting off in to the vastness of empty space$^{\textcolor{red}{1},\textcolor{blue}{2}}$.  
 
 \section{Two's Company, Three's a Crowd}
 
@@ -28,42 +28,6 @@
 
 \par \Celaeno My sisters, I really don't want to fight with you.  First, we're sisters from the same Mother.  Second, we're pretty much stuck together in this configuration for the next several hundred million years.  So we had might as well make the most of it.
 
-\begin{tcolorbox}[sharp corners, colback=red!30, colframe=red!80!blue, title=Orbital Dynamics Ia]
-\par \textcolor{black}{As a first approximation, the motion of celestial objects such as stars is dictated by Newton's laws of motion. These laws state that the gravitational force on a body caused by another body is determined by the masses of the two bodies, and the separation between them (decreasing with increasing distance). Something like a {\it body} may sound abstract (and a bit morbid!), but it means a point mass, that is, an object with all of its mass concentrated into a single point in space. It turns out that this is a good description if the physical object that the body represents is (close to) spherical, which is the case for most stars in the Universe (exceptions exist for some highly rotating stars, and stars in close binaries which are affected by their companion). \\ \\
-To describe the motion of a system with an arbitrary number of bodies, one computes the net force on each body by adding the gravitational force from all pairs with all other bodies (known as the {\it superposition principle}). The resulting equations of motion can only be solved in closed analytic form (that is, on pen and paper) when the number of bodies is just two (one of Newton's most renowned discoveries). When the number of bodies is larger, exact solutions can only be found in specific cases. 
-}
-%GIVE THE READER THE LOWEST LEVEL EXPLANATION OF ORBITAL DYNAMICS POSSIBLE.}.  
-\end{tcolorbox}
-
-\begin{tcolorbox}[sharp corners, colback=blue!30, colframe=blue!80!blue, title=Orbital Dynamics Ib]
-\par \textcolor{black}{Consider two bodies with masses $m_1$ and $m_2$. Their position vectors are denoted with $\myvec{R}_1$ and $\myvec{R}_2$, respectively \note{A.S.H.: Do we assume the reader at level blue is familiar with vectors, summation, and differentiation?}. The gravitational force on body 1 is given by
-\begin{align}
-\label{Chap3:Eq:F_1_vec}
-\myvec{F}_{1} = - \gconst m_1m_2 \frac{\myvec{R}_1 - \myvec{R}_2}{|| \myvec{R}_1 - \myvec{R}_2||^3}.
-\end{align}
-\note{A.S.H.: Have we defined $\gconst$ already by this point?} Newton's Third Law states that the force on body 2 is simply equal in magnitude but opposite in direction to that of the force on body 1, that is,
-\begin{align}
-\myvec{F}_{2} = - \myvec{F}_{1}.
-\end{align}
-From this, it is easy to see that the net force on the system is zero: $\myvec{F}_1 + \myvec{F}_2 = \myvec{0}$. \\ \\
-If there are more than two bodies, we need to apply the superposition principle: for each body $i$ in the system, we compute the total force on that body by considering pairs $(i,j)$ with all other bodies and sum the force for each pair:
-\begin{align}
-\label{Chap3:Eq:GravForcei}
-\myvec{F}_i = -\gconst m_i \sum_{\substack{j=1 \\ j\neq i}}^{N} m_j \frac{ \myvec{R}_i - \myvec{R}_j}{|| \myvec{R}_i - \myvec{R}_j||^3}.
-\end{align}
-Note that, in the summation over $j$, we must make sure that $j\neq i$, since we would otherwise double count pairs of bodies. Newton's Second Law for $\myvec{R}_i$ reads
-\begin{align}
-\label{Chap3:Eq:Newton_Second}
-\myvec{F}_i = m_i \myvec{a}_i = m_i \frac{\mathrm{d}^2 \myvec{R}_i}{\mathrm{d} t^2},
-\end{align}
-where $t$ is the time, and $\myvec{a}_i$ is the acceleration of body $i$. In Newtonian dynamics, the mass $m_i$ that appears in \Eq~(\ref{Chap3:Eq:Newton_Second}), the {\it inertial mass}, is the same as the {\it gravitational mass} $m_i$ that appears in \Eq~(\ref{Chap3:Eq:GravForcei}) (this is known as the {\it equivalence principle}). Therefore, the acceleration of body $i$ does not depend on its own mass $m_i$, and is given by
-\begin{align}
-\label{Chap3:Eq:EOM}
-\frac{\mathrm{d}^2 \myvec{R}_i}{\mathrm{d} t^2} = - \gconst \sum_{\substack{j=1 \\ j\neq i}}^{N} m_j \frac{ \myvec{R}_i - \myvec{R}_j}{|| \myvec{R}_i - \myvec{R}_j||^3}.
-\end{align}
-}.  
-\end{tcolorbox}
-
 \par \Taygete \textit{Fat} chance, you bulbous sphere!
 
 \par \Alcyone Ah ha, another good one, sister!
@@ -76,162 +40,19 @@ where $t$ is the time, and $\myvec{a}_i$ is the acceleration of body $i$. In New
 
 \par \Celaeno Yaaaaawn... What a lovely day, wouldn't you say, \rmtaygete~ and \rmalcyone?
 
-\par \nar \rmcelaeno~ turned her gaze toward her sisters, but was horrified by what she saw.  Her sisters' relative distance\footnote{In other words, the distance separating their respective centers of mass.} had changed over the course of their slumber.  It had gone \textit{down}, in fact.  They were now orbiting their common center of mass closer than ever before.  What's more, it seemed to \rmcelaeno~ that the relative angle of inclination between the inner orbital plane formed by her sisters's orbital plane and her own outer orbital plane had changed.  They were now much more coplanar than before.
+\par \nar \rmcelaeno~ turned her gaze toward her sisters, but was horrified by what she saw.  Her sisters' relative distance\footnote{In other words, the distance separating their respective centers of mass.} had changed over the course of their slumber.  It had gone \textit{down}, in fact.  They were now orbiting their common center of mass closer than ever before.  What's more, it seemed to \rmcelaeno~ that the relative angle of inclination between the inner orbital plane formed by her sisters's orbital plane and her own outer orbital plane had changed$^{\textcolor{red}{3}}$.  They were now much more coplanar than before.
 
 %\footnote{That is, all three stars orbiting within the same 2-D plane.}  In fact, currently, \rmcelaeno~ could only see \rmalcyone~ directly; presumably, \rmtaygete~ was behind \rmalcyone, her light being eclipsed by the foreground presence of her twin sister, along the line of sight separating her from \rmcelaeno.
 
-\begin{tcolorbox}[sharp corners, colback=red!30, colframe=red!80!blue, title=Coplanar]
-\par \textcolor{black}{When a system consists of just two bodies, then the bodies orbit within the same two-dimensional plane. Since there is no source of gravitational acceleration in the third dimension, isolated systems that begin coplanar will remain coplanar idenfinitely.}
-\end{tcolorbox}
-
-\begin{tcolorbox}[sharp corners, colback=red!30, colframe=red!80!blue, title=Orbital Inclination]
-\par \textcolor{black}{ Although the orbit of a two-body system lies within a two-dimensional plane, when more bodies (and therefore orbits) are involved, it is useful to define the inclination of an orbit relative to a reference frame, or to another orbit. In observational astronomy, inclinations are usually defined with respect to the {\it sky plane}. This means that the `inclination' is the angle between the orbital plane, and the plane of the sky. }  
-\end{tcolorbox}
-
 \par \nar  In fact, currently, \rmcelaeno~ could only see \rmalcyone~ directly; presumably, \rmtaygete~ was behind \rmalcyone, her light being eclipsed by the foreground presence of her twin sister, along the line of sight separating her from \rmcelaeno.
 
-\par \nar Rather crucially, \rmtaygete~ and \rmalcyone~ now shared a much more eccentric orbit than before.
-
-%levelone
-%or leveltwo?
-\begin{tcolorbox}[sharp corners, colback=red!30, colframe=red!80!blue, title=Orbital Eccentricity]
-\par \textcolor{black}{The Earth orbits about the Sun on a roughly circular orbit, such that its distance from the Sun does not change much over the course of a year\footnote{Seasonal changes are mostly driven by the Earth's non-zero {\it obliquity}: its rotation axis is tilted at about $23.5^\circ$ with respect to the orbital plane. This means that during one half of the year, more sunlight arrives at the southern hemisphere compared to the north (Summer in the southern hemisphere; Winter in the north), whereas this is reversed during the other half of the year. }. Hence, a reasonable approximation here for most purposes is that the Earth's orbital eccentricity is nearly zero, or $e \sim 0$.  This is not the case for every orbit, however.  Some orbits have non-zero eccentricities, orbiting their centers of mass on elliptic orbits.  In the limit $e \rightarrow 1$, the two bodies orbit each along a straight line, and are doomed to crash into each other and collide.}
-\end{tcolorbox}
+\par \nar Rather crucially, \rmtaygete~ and \rmalcyone~ now shared a much more eccentric orbit than before$^{\textcolor{red}{4}}$.
 
 \par \nar In particular, they now swung out to larger relative distances with respect to their common center of mass; here, they sit patiently due to their much slower orbital velocities. 
 
-\begin{tcolorbox}[sharp corners, colback=red!30, colframe=red!80!blue, title=Apoapsis]
-\par \textcolor{black} {\note{A.S.H.: I changed `apoastron/periastron' to `apoapsis/periapsis' since the latter are general terms. OK?} The part of furthest separation in the trajectory of an orbiting body is called ``apoapsis'', and corresponds to where along an eccentric orbit the orbital velocity is at a minimum.}.  
-\end{tcolorbox}
+\par \nar But, they eventually swing to much closer approaches than before, their surfaces almost touching at the point of closest approach$^{\textcolor{red}{5},\textcolor{blue}{6},\textcolor{green}{7}}$.
 
-\par \nar But, they eventually swing to much closer approaches than before, their surfaces almost touching at the point of closest approach.
-
-\begin{tcolorbox}[sharp corners, colback=red!30, colframe=red!80!blue, title=Periapsis]
-\par \textcolor{black}{The part of closest approach of the trajectory of an orbiting body is called ``periapsis'', and corresponds to where along an eccentric orbit the orbital velocity is at a maximum.}.  
-\end{tcolorbox}
-
-
-\begin{tcolorbox}[sharp corners, colback=blue!30, colframe=blue!80!blue, title=Orbital Dynamics IIb]
-\par \textcolor{black}{As alluded to before, Newton's equations of motion can be solved analytically for two bodies. We will discuss this briefly here. \\ \\
-First, we will show that the problem of two bodies (with two position vectors, $\myvec{R}_1$ and $\myvec{R}_2$) can be reduced to effectively a one-body problem (with just one position vector, $\myvec{r}$). Let $\myvec{r} \equiv \myvec{R}_1 - \myvec{R}_2$. If we take Newton's equation of motion for $\myvec{R}_1$ and $\myvec{R}_2$ and subtract them, we get
-\begin{align}
-\label{Chap3:Eq:2b_EOM_r}
-\ddot{\myvec{r}} &= \ddot{\myvec{R}}_1 - \ddot{\myvec{R}}_2 =  -\gconst (m_1+m_2)  \frac{\myvec{r}}{r^3}.
-\end{align}
-Here, we use dots to denote time derivatives (so two dots means taking the second time derivative). Once we know how $\myvec{r}$ evolves, that is, we have the solution $\myvec{r}(t)$, we can get the motion of the individual bodies 1 and 2 through the relations
-\begin{subequations}
-\label{Chap3:Eq:R_r_relations}
-\begin{align}
-\myvec{R}_1 &= \myvec{r}_\mathrm{CM} + \frac{m_2}{m_1+m_2} \myvec{r}; \\
-\myvec{R}_2 &= \myvec{r}_\mathrm{CM} - \frac{m_1}{m_1+m_2} \myvec{r}.
-\end{align}
-\end{subequations}
-Here, $\myvec{r}_\mathrm{CM}$ is the {\it center of mass} position vector given by
-\begin{align}
-\label{Chap3:Eq:r_CM_def}
-\myvec{r}_\mathrm{CM} \equiv \frac{m_1 \myvec{R}_1 + m_2 \myvec{R}_2}{m_1+m_2}.
-\end{align} 
-There are various ways to arrive at the solution for $\myvec{r}(t)$. Here, we will not discuss how to derive the result, but just mention it. Note that the solution can be checked by plugging it into the equation of motion, \Eq~(\ref{Chap3:Eq:2b_EOM_r}). The solution can be written in the general form:
-\begin{align}
-\label{Chap3:Eq:r_sol}
-\myvec{r}(t) = r(t) \left [ \cos(\TA) \, \unit{e} + \sin(\TA) \, \unit{q} \right ].
-\end{align}
-Here, $r(t)$ is the magnitude of $\myvec{r}(t)$ given by
-\begin{align}
-r(t) = \frac{a \left(1-e^2\right)}{1 + e \cos (\TA)},
-\end{align}
-with $a$ and $e$ the orbital semimajor axis and eccentricity, respectively (they are constants of the motion), whereas $\TA$ is the {\it true anomaly} that characterizes the orbital phase ($\TA$ varies with time). Note that the closest approach in the orbit, the periapsis, corresponds to $\TA=0$ with separation $r_\mathrm{p} = a(1-e)$. The largest separation (apoapsis) is reached when $\TA=\pi$, with $r_\mathrm{a} = a(1+e)$. \\ \\
-There are two more constant quantities in \Eq~(\ref{Chap3:Eq:r_sol}): $\unit{e}$ and $\unit{q}$. The former, $\unit{e}$, is the (unit) {\it eccentricity vector} that points along the {\it line of apsides}, the line connecting the periapsis (point of closets approach in the relative orbit) and apoapsis (point of furtest approach in the relative orbit). The vector $\unit{q}$ is perpendicular to both $\unit{e}$ and $\unit{l}$, where $\unit{l}$ points along the angular momentum of the orbit. In vector notation: $\unit{q} = \unit{l} \times \unit{e}$. Note that $\unit{e}$, $\unit{q}$, and $\unit{l}$ are all constant in the two-body problem. }
-\end{tcolorbox}
-
-\begin{tcolorbox}[sharp corners, colback=blue!30, colframe=blue!80!blue, title=Orbital Dynamics IIb (continued)]
-\par \textcolor{black}{The relation between physical time $t$ and the true anomaly $\TA$ is described by the {\it Kepler equation}. First, we need to introduce another angle which describes the orbital phase and which is closely related to the true anomaly: the {\it eccentric anomaly}, $\EA$. The relation between $\TA$ and $\EA$ is given by
-\begin{align}
-\label{Chap3:Eq:EA_to_TA}
-\cos(\TA) = \frac{\cos(\EA) - e}{1 - e \cos(\EA)}; \qquad \sin(\EA) = \sqrt{1-e^2} \frac{\sin(\TA)}{1+e\cos(\TA)}.
-\end{align}
-The Kepler equation relates $\EA$ (and hence $\TA$) to time $t$ according to
-\begin{align}
-\label{Chap3:Eq:kep_eq}
-\EA - e \sin(\EA) = n(t-\tau).
-\end{align}
-Here, $n$ is the {\it mean motion} given by
-\begin{align}
-n \equiv \frac{2\pi}{P} = \sqrt{\frac{G(m_1+m_2)}{a^3}},
-\end{align}
-where $P$ is the {\it orbital period}, given by
-\begin{align}
-\label{Chap3:Eq:kepl}
-P = 2 \pi \sqrt{\frac{a^3}{G(m_1+m_2)}}.
-\end{align}
-Furthermore, $\tau$ is the time of periapsis passage, i.e, a reference time at which the orbit passes periapsis. The combination $n t$ (or $nt - n\tau$) is known as the `mean motion' $\MA$. We note that \Eq~(\ref{Chap3:Eq:kep_eq}) has no simple solutions for $\EA$ for a given $t$ (except in the trivial case of circular orbits, $e=0$). Generally, it has to be solved numerically, for example, by means of {\it Newton iteration}.}
-\end{tcolorbox}
-
-%levelthree:
-\begin{tcolorbox}[sharp corners, colback=green!30, colframe=green!80!blue, title=Orbital Dynamics IIc]
-\par \textcolor{black}{In Orbital Dynamics IIb, we discussed the analytic solution to the two-body problem and described it in terms of the orbital vectors, $\unit{e}$ and $\unit{q}$ (or, equivalently, $\unit{e}$ and $\unit{l}$. Another way of describing the orbital orientation is using {\it orbital angles} (which is better to use, i.e., orbital vectors or orbital angles, depends on the problem). The orbital angles (in addition to $\TA$, $\EA$ or $\MA$) are the inclination $i$, the argument of periapsis $\omega$ and the longitude of the ascending node $\Omega$. These angles are equivalent to the `Euler' angles which describe the orientation of an object in a coordinate system. \note{A.S.H.: Do we want to include a figure to illustrate orbital elements?}. \\ \\
-The following relations exist between the orbital elements and the orbital vectors. First, to compute the elements from the vectors, we have:
-\begin{align}
-\cos(i) = \unit{z} \cdot \unit{l},
-\end{align}
-for the inclination. Here, $\unit{z}$ is just the unit $z$-direction in the coordinate system. For any two-body system, $\unit{l}$ at any time is given by
-\begin{align}
-\unit{l} = \frac{ \myvec{r} \times \myvec{v}}{||\myvec{r} \times \myvec{v} ||}.
-\end{align}
-To get the longitude of the ascending nodes $\Omega$, we define the so-called ascending node vector, $\unit{\Omega}$:
-\begin{align}
-\unit{\Omega} = \unit{z} \times \unit{l}.
-\end{align}
-We then have
-\begin{align}
-\cos(\Omega) = \unit{x} \cdot \unit{\Omega}; \qquad \sin(\Omega) = \unit{y} \cdot \unit{\Omega}.
-\end{align}
-The argument of pericenter, $\omega$, is determined by
-\begin{align}
-\cos(\omega) = \unit{e} \cdot \unit{\Omega}; \qquad \sin(\omega) = -\unit{q} \cdot \unit{\Omega}.
-\end{align}
-%Finally, the true anomaly is determined by
-%\begin{align}
-%\cos(\TA) = \unit{e} \cdot \unit{r};  \qquad \sin(\TA) = \unit{q} \cdot \unit{r}.
-%\end{align}
-The reverse operation (from orbital elements to orbital vectors) is described by
-\begin{subequations}
-\label{Chap3:Eq:elements_to_vec}
-\begin{align}
-\nonumber \unit{e} &= \left [ \cos(\Omega) \cos(\omega) - \sin(\Omega) \sin(\omega) \cos(i) \right ] \unit{x} + \left [ \sin(\Omega) \cos(\omega) \right. \\
-&\quad \left. + \cos(\Omega) \sin(\omega) \cos(i) \right ] \unit{y} + \sin(\omega) \sin(i) \, \unit{z}; \\
-\nonumber \unit{q} &= \left [ -\cos(\Omega) \sin(\omega) - \sin(\Omega) \cos(\omega) \cos(i) \right ] \unit{x} + \left [ -\sin(\Omega) \sin(\omega) \right. \\
-&\quad \left. + \cos(\Omega) \cos(\omega) \cos(i) \right ] \unit{y} + \cos(\omega) \sin(i) \, \unit{z}.
-\end{align}
-\end{subequations}
-}
-\end{tcolorbox}
-
-\begin{tcolorbox}[sharp corners, colback=green!30, colframe=green!80!blue, title=Orbital Dynamics IIc (continued)]
-\par \textcolor{black}{As also discussed in Orbital Dynamics IIb, the {\it Kepler} equation cannot be solved analytically in general. A useful method to solve it numerically is using {\it Newton iteration}. The latter is formulated as follows: let $f(x)$ be a function of $x$, and we wish to know the value of $x=x_0$ such that $f(x_0)=0$. We can then apply an iterative scheme based on the derivative of $f(x)$: 
-\begin{align}
-x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}.
-\end{align}
-In our case, to solve \Eq~(\ref{Chap3:Eq:kep_eq}), we can write $f(\EA) = \EA - e \sin(\EA) - \MA$ where $\MA = n(t-\tau)$, such that
-\begin{align}
-\EA_{n+1} = \EA_n - \frac{\EA - e \sin(\EA) - \MA}{1 - e \cos(\EA)}.
-\end{align}
-}
-\end{tcolorbox}
-
-
-\begin{tcolorbox}[sharp corners, colback=blue!30, colframe=blue!80!blue,  title=Orbits in hierarchical triples]
-\par \textcolor{black}{ In a hierarchical triple system, two objects orbit each other in a relatively tight orbit (the ``inner orbit''), whereas a third object orbits the former two objects' center of mass in a wider orbit (the ``outer orbit''). If the inner orbit is sufficiently more compact than the outer orbit, the system can remain stable on long time-scales. On short time-scales, the orbits are nearly Keplerian. At any given time, one can define ``oscullating'' orbital elements. If the third object were instantaneously removed, the inner orbit would be perfectly Keplerian and its orbital elements would be the oscullating elements. \\ \\
-It is generally hard to predict exactly whether or not a given hierarchical triple is stable or not. First, there is no unique way of defining stability. In a stable system, the energies (and hence semimajor axes) of the inner and outer orbits do not change systematically over time. However, they can change on shorter time-scales as the bodies move in their nearly-Keplerian orbits. These changes in the (oscullating) orbital elements increase in magnitude as the triple becomes more compact (i.e., the inner and outer orbital separations become more comparable and so the tertiary star aproaches the inner binary at closer and closer periapsis distances).  Also, the notion of stability depends on what timescale one requires the triple to be stable, since chaos in three-body systems can lead to destabilization of the system on timescales that are much longer than the orbital timscales. \\ \\
-Nevertheless, several usuful analytic criteria have been developed that can be used to predict stability of a given system. A well known and widely used criterium is that of Marding and Aarseth \citep{}, which reads \\ \\
-\begin{align}
-\frac{a_{\mathrm{out}}(1-e_{\mathrm{out}})}{a_{\mathrm{in}}} > 2.8 \left [ (1 + q_{\mathrm{out}}) \frac{1+e_{\mathrm{out}}}{(1 - e_{\mathrm{out}})^{1/2}} \right ]^{2/5} \left (1 - \frac{0.3 i_{\mathrm{rel}}}{180} \right ).
-\end{align}
-Here, subscripts `in' and `out' refer to the the inner and outer orbits, respectively. The mass ratio $q_{\mathrm{out}}$ is defined as $q_{\mathrm{out}} \equiv m_3/(m_1+m_2)$, where $m_1$ and $m_2$ are the masses of the two components in the inner binary, and $m_3$ is the mass of the third body. The mutual inclination between the inner and outer orbits is $i_{\mathrm{rel}}$, and it affects stability in addition to the semimajor axes and eccentricities.
-}
-\end{tcolorbox}
-
-\par \nar Each time they complete one orbital revolution, the two sisters drift a little bit closer to colliding directly with each.  On the whole, there was no mistaking the fact that their orbit was getting more compact...and fast.
+\par \nar Each time they complete one orbital revolution, the two sisters drift a little bit closer to colliding directly with each.  On the whole, there was no mistaking the fact that their orbit was getting more compact...and fast$^{\textcolor{blue}{8}}$.
 
 \par \nar After a particularly close periastron passage, \rmtaygete~ too began to notice the changes.
 
@@ -259,6 +80,7 @@ Here, subscripts `in' and `out' refer to the the inner and outer orbits, respect
 
 \par \Celaeno Right, fair enough.  The point is:  stop being a jerk.  And while you are doing that, I am going to try to figure out a way to save you.  I suspect that the shift toward more co-planar orbits is directly related to the increase in your orbital eccentricity.  If you think about it, these two things in combination should conserve total angular momentum, and might arise if the components of the inner orbit spend more or less time above or below the orbital plane of the outer orbit.\footnote{Sir Isaac Newton was among the first to consider the mutual gravitational interactions of a hierarchical triple star system.  He realized that, if the orbital plane of the inner compact binary is inclined relative to the outer orbit of the tertiary companion, then an asymmetry can arise where the components of the inner binary do not spend equal amounts of time above and below the orbital plane of the tertiary.  This provides a net torque on the inner binary, reducing its orbital inclination with respect to the outer tertiary orbital plane.  In order to conserve angular momentum, the eccentricity of the inner binary must increase, reaching a maximum when the orbital plane of the inner binary crosses that of the outer tertiary.  If the eccentricity gets to be sufficiently high, then the components of the inner binary can collide and merge.  For triples that do not undergo a collision in the inner binary, these oscillations in orbital inclination and eccentricity are nowadays called "Lidov-Kozai oscillations".} 
 
+\begin{comment}
 %\footnote{DEFINE ANGULAR MOMENTUM AND CONSERVATION THEREOF.}
 \begin{tcolorbox}[sharp corners, colback=red!30, colframe=red!80!blue, title=Angular Momentum]
 \par \textcolor{red}{DEFINE ANGULAR MOMENTUM.}. 
@@ -268,6 +90,7 @@ Here, subscripts `in' and `out' refer to the the inner and outer orbits, respect
 \begin{tcolorbox}[sharp corners, colback=red!30, colframe=red!80!blue, title=Conservation of Energy and Angular Momentum]
 \par \textcolor{red}{DISCUSS CONSERVATION LAWS.}.  
 \end{tcolorbox}
+\end{comment}
 
 \par \nar \rmcelaeno~ finds herself lost in thought.  Several minutes pass.  Finally, an epiphany strikes.
 
@@ -289,74 +112,11 @@ Here, subscripts `in' and `out' refer to the the inner and outer orbits, respect
 %\par \textcolor{blue}{DEFINE TORQUE.}.  
 %\end{tcolorbox}
 
-\begin{tcolorbox}[sharp corners, colback=blue!30, colframe=blue!80!blue, title=Orbital dynamics IIIb]
-\par \textcolor{black}{Even if a triple system is hierarchical and long-term stable, its inner and outer orbits can still over time due to {\bf torques} that the inner and outer orbits exert on each other, leading to {\bf angular momentum exchange}. In the stellar context when all three bodies have similar masses, the angular momentum budget is dominated by the outer orbit, and the torques have the largest effect on the inner orbit. The angular momentum variations occur periodically; if the inner and outer orbits are initially sufficiently inclined, then the inner orbit eccentricity oscillates and can reach high values; these oscillations are known as  {\bf von Zeipel-Lidov-Kozai (ZLK)} oscillations. They have important implications in a large range of astrophysical systems. Examples beyond stellar triple systems include (but are not limited to) binary systems in galactic nuclei with a central massive black hole, triple supermassive black holes, planets in binary star systems, and binary asteroids.
-A very useful technique to study the long-term evolution in stable hierarchical triples is the {\bf secular} approximation, in which the Hamiltonian of the system is expanded in the (small) ratio of the inner to outer orbital separation. One then averages over the inner and outer orbits, which greatly simplifies the equations of motion. It turns out that, after applying this technique, as a first approximation (lowest expansion order, assuming one of the bodies in the inner binary is massless, and that the inner orbit has zero initial eccentricity), the {\bf maximum eccentricity} reached during ZLK oscillations is given by
-\begin{align}
-\label{eq:ZLK_emax}
-e_\mathrm{max} = \sqrt{1-\frac{5}{3}\cos^2 (i_\mathrm{rel})},
-\end{align}
-where $i_\mathrm{rel}$ is the initial relative inclination angle between the inner and outer orbits. This shows that $e_\mathrm{max}$ is sensitively dependent on $i_\mathrm{max}$; in particular,  eccentricity excitation occurs only if $\cos(i_\mathrm{rel}) < \sqrt{3/5}$ (so $39.23^\circ \lesssim i_\mathrm{rel} \lesssim 140.77^\circ$), and $e_\mathrm{max} \rightarrow 1$ as $i_\mathrm{max} \rightarrow 90^\circ$. As a first approximation, the {\bf period} of the oscillations is given by
-\begin{align}
-T_\mathrm{ZLK} \approx \frac{P_\mathrm{out}^2}{P_\mathrm{in}} \frac{m_1+m_2+m_3}{m_3} \left(1-e_\mathrm{out}^2 \right )^{3/2},
-\end{align}
-where $P_\mathrm{in}$ and $P_\mathrm{out}$ are the inner and outer orbital periods, respectively. 
-The above expressions are first approximations that are stricitly valid only in rather simplified cases. In the more general case, the dynamics are more complicated. When higher-order effects in the expansion are taken into account (in particular, octupole-order terms), then the long-term evolution can be {\bf chaotic}, and much higher eccentricities can be reached than implied by \Eq~(\ref{eq:ZLK_emax}). Specifically, octupole-order terms start to become important when
-\begin{align}
-\epsilon_\mathrm{oct} = \frac{|m_1-m_2|}{m_1+m_2} \frac{a_\mathrm{in}}{a_\mathrm{out}} \frac{e_\mathrm{out}}{1-e_\mathrm{out}^2} \gtrsim 10^{-4}.
-\end{align}
-Furthermore, ZLK oscillations can be {\bf quenched} if additional {\bf short-period forces} (forces that depend very sensitively on separation) act in the inner binary which lead to additional apsidal motion/orbital precession. These could arise because of relativistic corrections, tidal bulges, or stellar rotation. Generally, this quenching occurs if the time-scale of apsidal motion due to short-range forces, $T_\mathrm{SRF}$, is significantly shorter than the ZLK time-scale, i.e., $T_\mathrm{SRF} \ll T_\mathrm{ZLK}$. 
-}  
-\end{tcolorbox}
-
-%levelthree:
-\begin{tcolorbox}[sharp corners, colback=green!30, colframe=green!80!blue, title=Orbital Dynamics IIIc]
-\par \textcolor{black}{Here, we discuss some analytical aspects of ZLK oscillations in more detail. The Hamiltonian of the hierarchical three-body system can be written in terms of the inner and outer orbital separations $\myvec{r}_\mathrm{in}$ and $\myvec{r}_\mathrm{out}$ as
-\begin{align}
-\label{eq:Htriplegen}
-\nonumber \mathcal{H} &= T+V = - \frac{\gconst m_1m_2}{2a_\mathrm{in}} - \frac{\gconst(m_1+m_2)m_3}{2 a_\mathrm{out}} \\
-&\quad - \frac{\gconst m_3}{r_2} \sum_{n=2}^\infty \mathcal{M}_n \left ( \frac{r_\mathrm{in}}{r_\mathrm{out}} \right )^n \widetilde{P}_n(\cos \Phi).
-\end{align}
-The first two terms represent the binding energies of the inner and outer orbits, respectively, and the remaining terms in the second line represent the {\bf perturbing function} that describes how the orbits evolve on time-scales (much) longer than the orbital time-scales (here, we assumed that the orbits are Keplerian on short time-scales for the terms in the first line). The parameter $\mathcal{M}_n$ is given by
-\begin{align}
-\mathcal{M}_n \equiv \frac{m_1 m_2}{m_1+m_2}\frac{m_1^{n-1} - (-m_2)^{n-1}}{m_1+m_2)^{n-1}}.
-\end{align}
-Furthermore, $\widetilde{P}_n(x)$ is the $n^\mathrm{th}$ Legendre polynomial, and $\Phi$ is the (instantaneous) angle between $\myvec{r}_\mathrm{in}$ and $\myvec{r}_\mathrm{out}$. \\ \\
-Truncating the expansion in \Eq~(\ref{eq:Htriplegen}) to $n=2$ (the {\bf quadrupole} order) and averaging over both inner and outer orbits, the Hamiltonian can be written as\footnote{There are cases when this `double' averaging is {\bf not} justified, i.e., it can happen that the time-scale on which orbits evolve is shorter than one of the orbital periods in the system. One notable example is the {\bf evection resonance}, when the time-scale for the inner orbit to precess due to the torque of the third body is comparable to the outer orbital period, potentially leading to additional eccentricity excitation. }
-\begin{align}
-\label{eq:Htriplequadav}
-\nonumber \langle \mathcal{H}_\mathrm{quad}\rangle &= C_\mathrm{quad} \left [ \left (2 + 3 e_\mathrm{in}^2 \right ) \left (3 \cos^2(i_\mathrm{tot}) - 1 \right ) \right. \\
-&\quad \left. + 15 e_\mathrm{in}^2 \sin^2(i_\mathrm{tot}) \cos(2\omega_\mathrm{in}) \right ].
-\end{align} 
-Here, 
-\begin{align}
-C_\mathrm{quad} \equiv \frac{1}{16} \frac{\gconst m_1m_2m_3}{(m_1+m_2) \, a_\mathrm{out}} \left (\frac{a_\mathrm{in}}{a_\mathrm{out}} \right )^2 \left (1 - e_\mathrm{out}^2 \right )^{-3/2},
-\end{align}
-and $\omega_\mathrm{in}$ is the inner orbit argument of periapsis. Note that we switched to {\bf orbital elements} to describe the orbital orientations. 
-}  
-\end{tcolorbox}
-
-\begin{tcolorbox}[sharp corners, colback=green!30, colframe=green!80!blue, title=Orbital Dynamics IIIc (continued)]
-\par \textcolor{black}{
-Generally, from a given Hamiltonian, the {\bf equations of motion} read
-\begin{align}
-\label{eq:Hameq}
-\left \{ \begin{array}{lll}
-\displaystyle \dot{L}_j &= \displaystyle \frac{\partial \mathcal{H}}{\partial \TA_j}; & \dot{\TA}_j = \displaystyle - \frac{\partial \mathcal{H}}{\partial L_j}; \\
-\displaystyle \dot{G}_j &= \displaystyle \frac{\partial \mathcal{H}}{\partial \AP_j}; & \dot{\AP}_j = \displaystyle - \frac{\partial \mathcal{H}}{\partial G_j}; \\
-\displaystyle \dot{H}_j &= \displaystyle \frac{\partial \mathcal{H}}{\partial \LAN_j}; & \dot{\LAN}_j = \displaystyle - \frac{\partial \mathcal{H}}{\partial H_j}. \\
-\end{array} \right.
-\end{align}
-The coordinates used are the {\bf Delaunay elements}; in particular, $L_j$, $G_j$, and $H_j$ are related to the orbital angular momentum: $L_j = \mu_j \sqrt{\gconst M_j a_j}$ is the circular orbital angular momentum, $G_j = L_j \sqrt{1-e_j}^2$ the general angular momentum, and $H_j = G_j \cos (i_j)$ the $z$-component of the angular momentum. Here, $\mu_j$ is the reduced mass, which is $\mu_\mathrm{in} = m_1m_2/M_\mathrm{in}$ and $\mu_\mathrm{out} = m_3 M_\mathrm{in}/M_\mathrm{out}$ with $M_\mathrm{in} \equiv m_1+m_2$, and $M_\mathrm{out} \equiv m_1+m_2+m_3$. The {\bf conjugate} coordinates to the momenta $L_j$, $G_j$, and $H_j$ are the true anomaly $\TA_j$, the argument of periapsis $\AP_j$, and the longitude of the ascending note $\LAN_j$. \\ \\
-From \Eq~(\ref{eq:Htriplequadav}), it is clear that the hierarchical three-body Hamiltonian at the quadrupole order is independent of $\AP_\mathrm{out}$, which immediately implies that the {\bf outer orbital eccentricity $e_\mathrm{out}$ is constant}. This feature disappears when higher-order terms are included (although, in systems with similar masses, the outer orbital eccentricity usually changes very little). 
-\note{More to be added.}
-}
-\end{tcolorbox}
 
 
 \par \Alcyone And why should we care about that?
 
-\par \Celaeno Well, unless I miss my guess, this will cause your orbital plane to be torqued toward mine, so that we are in the end orbiting roughly co-planar to each other.  Unfortunately, in order to conserve total angular momentum, this also causes the eccentricity of your orbital motion to increase.  
+\par \Celaeno Well, unless I miss my guess, this will cause your orbital plane to be torqued toward mine, so that we are in the end orbiting roughly co-planar to each other.  Unfortunately, in order to conserve total angular momentum, this also causes the eccentricity of your orbital motion to increase$^{\textcolor{blue}{9},\textcolor{green}{10}}$.  
 
 \par \Taygete  Huh?  Say that again?  How did you get so smart, anyways?
 
@@ -370,9 +130,11 @@ From \Eq~(\ref{eq:Htriplequadav}), it is clear that the hierarchical three-body 
 
 %leveltwo or levelthree:
 %\footnote{	DESCRIBE TIDAL DISSPATION, AND EXPLAIN WHY IT IS MOST RELEVANT AT PERIASTRON AND FOR OBJECTS WITH LARGES RADII.}  
+\begin{comment}
 \begin{tcolorbox}[sharp corners, colback=blue!30, colframe=blue!80!blue, title=Torque]
 \par \textcolor{blue}{DEFINE TIDAL DISSIPATION.}.  
 \end{tcolorbox}
+\end{comment}
 
 \par \Celaeno In short, you're about to collide with each other.  In fact, you'll probably merge.
 
@@ -431,11 +193,13 @@ From \Eq~(\ref{eq:Htriplequadav}), it is clear that the hierarchical three-body 
 
 \par \Celaeno Don't worry, I've seen it lots of times before.  New stars spin down as they grow out of infancy.
 
+\begin{comment}
 %leveltwo or levelthree:
 %\footnote{ANGULAR MOMENTUM CONSERVATION DISCUSSION, in the context of spin!}  
 \begin{tcolorbox}[sharp corners, colback=blue!30, colframe=blue!80!blue, title=Torque]
 \par \textcolor{blue}{DEFINE TORQUE.}.  
 \end{tcolorbox}
+\end{comment}
 
 
 \par \Celaeno So, the ``belly'' will go away.  You'll settle in to a more sphere-like shape in no time.  I think the whole thing has something to do with ``magnetic fields'', or so I have heard.  As near as I can tell, this is some magical force that slows your spin rate down as you mature into a beautiful new star.
@@ -496,6 +260,250 @@ From \Eq~(\ref{eq:Htriplequadav}), it is clear that the hierarchical three-body 
 %\Lacedaemon Oh my gawd, you don't have a plan!  We are so going to die!
 %
 %$\Celaeno$ had already fallen asleep, and was now snoring loudly.
+
+
+
+\section{Educational Material}
+
+\begin{tcolorbox}[sharp corners, colback=red!30, colframe=red!80!blue, title=Orbital Dynamics I$^1$]
+\par \textcolor{black}{As a first approximation, the motion of celestial objects such as stars is dictated by Newton's laws of motion. These laws state that the gravitational force on a body caused by another body is determined by the masses of the two bodies, and the separation between them (decreasing with increasing distance). Something like a {\it body} may sound abstract (and a bit morbid!), but it means a point mass, that is, an object with all of its mass concentrated into a single point in space. It turns out that this is a good description if the physical object that the body represents is (close to) spherical, which is the case for most stars in the Universe (exceptions exist for some highly rotating stars, and stars in close binaries which are affected by their companion). \\ \\
+To describe the motion of a system with an arbitrary number of bodies, one computes the net force on each body by adding the gravitational force from all pairs with all other bodies (known as the {\it superposition principle}). The resulting equations of motion can only be solved in closed analytic form (that is, on pen and paper) when the number of bodies is just two (one of Newton's most renowned discoveries). When the number of bodies is larger, exact solutions can only be found in specific cases. 
+}
+%GIVE THE READER THE LOWEST LEVEL EXPLANATION OF ORBITAL DYNAMICS POSSIBLE.}.  
+\end{tcolorbox}
+
+\begin{tcolorbox}[sharp corners, colback=blue!30, colframe=blue!80!blue, title=Orbital Dynamics II$^2$]
+\par \textcolor{black}{Consider two bodies with masses $m_1$ and $m_2$. Their position vectors are denoted with $\myvec{R}_1$ and $\myvec{R}_2$, respectively \note{A.S.H.: Do we assume the reader at level blue is familiar with vectors, summation, and differentiation?}. The gravitational force on body 1 is given by
+\begin{align}
+\label{Chap3:Eq:F_1_vec}
+\myvec{F}_{1} = - \gconst m_1m_2 \frac{\myvec{R}_1 - \myvec{R}_2}{|| \myvec{R}_1 - \myvec{R}_2||^3}.
+\end{align}
+\note{A.S.H.: Have we defined $\gconst$ already by this point?} Newton's Third Law states that the force on body 2 is simply equal in magnitude but opposite in direction to that of the force on body 1, that is,
+\begin{align}
+\myvec{F}_{2} = - \myvec{F}_{1}.
+\end{align}
+From this, it is easy to see that the net force on the system is zero: $\myvec{F}_1 + \myvec{F}_2 = \myvec{0}$. \\ \\
+If there are more than two bodies, we need to apply the superposition principle: for each body $i$ in the system, we compute the total force on that body by considering pairs $(i,j)$ with all other bodies and sum the force for each pair:
+\begin{align}
+\label{Chap3:Eq:GravForcei}
+\myvec{F}_i = -\gconst m_i \sum_{\substack{j=1 \\ j\neq i}}^{N} m_j \frac{ \myvec{R}_i - \myvec{R}_j}{|| \myvec{R}_i - \myvec{R}_j||^3}.
+\end{align}
+Note that, in the summation over $j$, we must make sure that $j\neq i$, since we would otherwise double count pairs of bodies. Newton's Second Law for $\myvec{R}_i$ reads
+\begin{align}
+\label{Chap3:Eq:Newton_Second}
+\myvec{F}_i = m_i \myvec{a}_i = m_i \frac{\mathrm{d}^2 \myvec{R}_i}{\mathrm{d} t^2},
+\end{align}
+where $t$ is the time, and $\myvec{a}_i$ is the acceleration of body $i$. In Newtonian dynamics, the mass $m_i$ that appears in \Eq~(\ref{Chap3:Eq:Newton_Second}), the {\it inertial mass}, is the same as the {\it gravitational mass} $m_i$ that appears in \Eq~(\ref{Chap3:Eq:GravForcei}) (this is known as the {\it equivalence principle}). Therefore, the acceleration of body $i$ does not depend on its own mass $m_i$, and is given by
+\begin{align}
+\label{Chap3:Eq:EOM}
+\frac{\mathrm{d}^2 \myvec{R}_i}{\mathrm{d} t^2} = - \gconst \sum_{\substack{j=1 \\ j\neq i}}^{N} m_j \frac{ \myvec{R}_i - \myvec{R}_j}{|| \myvec{R}_i - \myvec{R}_j||^3}.
+\end{align}
+}.  
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[sharp corners, colback=red!30, colframe=red!80!blue, title=Orbital Inclination$^3$]
+\par \textcolor{black}{ Although the orbit of a two-body system lies within a two-dimensional plane, when more bodies (and therefore orbits) are involved, it is useful to define the inclination of an orbit relative to a reference frame, or to another orbit. In observational astronomy, inclinations are usually defined with respect to the {\it sky plane}. This means that the `inclination' is the angle between the orbital plane, and the plane of the sky. In the case of triple systems, one can define the {\it mutual} or {\it relative} inclination between the two orbits. When the latter is zero, the orbits are coplanar. A mutual inclination of 90 degrees means the orbits are perpendicular. When the mutual inclination is 180 degrees, then the orbits are again coplanar, but the bodies are moving in opposite directions relative to each other. }  
+\end{tcolorbox}
+
+
+
+%levelone
+%or leveltwo?
+\begin{tcolorbox}[sharp corners, colback=red!30, colframe=red!80!blue, title=Orbital Eccentricity$^4$]
+\par \textcolor{black}{The Earth orbits about the Sun on a roughly circular orbit, such that its distance from the Sun does not change much over the course of a year\footnote{Seasonal changes are mostly driven by the Earth's non-zero {\it obliquity}: its rotation axis is tilted at about $23.5^\circ$ with respect to the orbital plane. This means that during one half of the year, more sunlight arrives at the southern hemisphere compared to the north (Summer in the southern hemisphere; Winter in the north), whereas this is reversed during the other half of the year. }. Hence, a reasonable approximation here for most purposes is that the Earth's orbital eccentricity is nearly zero, or $e \sim 0$.  This is not the case for every orbit, however.  Some orbits have non-zero eccentricities, orbiting their centers of mass on elliptic orbits.  In the limit $e \rightarrow 1$, the two bodies orbit each along a straight line, and are doomed to crash into each other and collide.}
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[sharp corners, colback=red!30, colframe=red!80!blue, title=Periapsis and apoapsis$^5$]
+\par \textcolor{black} {\note{A.S.H.: I changed `apoastron/periastron' to `apoapsis/periapsis' since the latter are general terms. OK?} The part of furthest separation in the trajectory of an orbiting body is called ``apoapsis'', and corresponds to where along an eccentric orbit the orbital velocity is at a minimum. The part of closest approach of the trajectory of an orbiting body is called ``periapsis'', and corresponds to where along an eccentric orbit the orbital velocity is at a maximum. In a circular orbit, the relative orbital distance is always the same, hence both the periapsis and apoapsis are equal to the constant relative orbital separation. }
+\end{tcolorbox}
+
+
+
+\begin{tcolorbox}[sharp corners, colback=blue!30, colframe=blue!80!blue, title=Orbital Dynamics III$^6$]
+\par \textcolor{black}{As alluded to before, Newton's equations of motion can be solved analytically for two bodies. We will discuss this briefly here. \\ \\
+First, we will show that the problem of two bodies (with two position vectors, $\myvec{R}_1$ and $\myvec{R}_2$) can be reduced to effectively a one-body problem (with just one position vector, $\myvec{r}$). Let $\myvec{r} \equiv \myvec{R}_1 - \myvec{R}_2$. If we take Newton's equation of motion for $\myvec{R}_1$ and $\myvec{R}_2$ and subtract them, we get
+\begin{align}
+\label{Chap3:Eq:2b_EOM_r}
+\ddot{\myvec{r}} &= \ddot{\myvec{R}}_1 - \ddot{\myvec{R}}_2 =  -\gconst (m_1+m_2)  \frac{\myvec{r}}{r^3}.
+\end{align}
+Here, we use dots to denote time derivatives (so two dots means taking the second time derivative). Once we know how $\myvec{r}$ evolves, that is, we have the solution $\myvec{r}(t)$, we can get the motion of the individual bodies 1 and 2 through the relations
+\begin{subequations}
+\label{Chap3:Eq:R_r_relations}
+\begin{align}
+\myvec{R}_1 &= \myvec{r}_\mathrm{CM} + \frac{m_2}{m_1+m_2} \myvec{r}; \\
+\myvec{R}_2 &= \myvec{r}_\mathrm{CM} - \frac{m_1}{m_1+m_2} \myvec{r}.
+\end{align}
+\end{subequations}
+Here, $\myvec{r}_\mathrm{CM}$ is the {\it center of mass} position vector given by
+\begin{align}
+\label{Chap3:Eq:r_CM_def}
+\myvec{r}_\mathrm{CM} \equiv \frac{m_1 \myvec{R}_1 + m_2 \myvec{R}_2}{m_1+m_2}.
+\end{align} 
+There are various ways to arrive at the solution for $\myvec{r}(t)$. Here, we will not discuss how to derive the result, but just mention it. Note that the solution can be checked by plugging it into the equation of motion, \Eq~(\ref{Chap3:Eq:2b_EOM_r}). The solution can be written in the general form:
+\begin{align}
+\label{Chap3:Eq:r_sol}
+\myvec{r}(t) = r(t) \left [ \cos(\TA) \, \unit{e} + \sin(\TA) \, \unit{q} \right ].
+\end{align}
+Here, $r(t)$ is the magnitude of $\myvec{r}(t)$ given by
+\begin{align}
+r(t) = \frac{a \left(1-e^2\right)}{1 + e \cos (\TA)},
+\end{align}
+with $a$ and $e$ the orbital semimajor axis and eccentricity, respectively (they are constants of the motion), whereas $\TA$ is the {\it true anomaly} that characterizes the orbital phase ($\TA$ varies with time). Note that the closest approach in the orbit, the periapsis, corresponds to $\TA=0$ with separation $r_\mathrm{p} = a(1-e)$. The largest separation (apoapsis) is reached when $\TA=\pi$, with $r_\mathrm{a} = a(1+e)$. \\ \\
+There are two more constant quantities in \Eq~(\ref{Chap3:Eq:r_sol}): $\unit{e}$ and $\unit{q}$. The former, $\unit{e}$, is the (unit) {\it eccentricity vector} that points along the {\it line of apsides}, the line connecting the periapsis (point of closets approach in the relative orbit) and apoapsis (point of furtest approach in the relative orbit). The vector $\unit{q}$ is perpendicular to both $\unit{e}$ and $\unit{l}$, where $\unit{l}$ points along the angular momentum of the orbit. In vector notation: $\unit{q} = \unit{l} \times \unit{e}$. Note that $\unit{e}$, $\unit{q}$, and $\unit{l}$ are all constant in the two-body problem. }
+\end{tcolorbox}
+
+\begin{tcolorbox}[sharp corners, colback=blue!30, colframe=blue!80!blue, title=Orbital Dynamics II$^6$ (continued)]
+\par \textcolor{black}{The relation between physical time $t$ and the true anomaly $\TA$ is described by the {\it Kepler equation}. First, we need to introduce another angle which describes the orbital phase and which is closely related to the true anomaly: the {\it eccentric anomaly}, $\EA$. The relation between $\TA$ and $\EA$ is given by
+\begin{align}
+\label{Chap3:Eq:EA_to_TA}
+\cos(\TA) = \frac{\cos(\EA) - e}{1 - e \cos(\EA)}; \qquad \sin(\EA) = \sqrt{1-e^2} \frac{\sin(\TA)}{1+e\cos(\TA)}.
+\end{align}
+The Kepler equation relates $\EA$ (and hence $\TA$) to time $t$ according to
+\begin{align}
+\label{Chap3:Eq:kep_eq}
+\EA - e \sin(\EA) = n(t-\tau).
+\end{align}
+Here, $n$ is the {\it mean motion} given by
+\begin{align}
+n \equiv \frac{2\pi}{P} = \sqrt{\frac{G(m_1+m_2)}{a^3}},
+\end{align}
+where $P$ is the {\it orbital period}, given by
+\begin{align}
+\label{Chap3:Eq:kepl}
+P = 2 \pi \sqrt{\frac{a^3}{G(m_1+m_2)}}.
+\end{align}
+Furthermore, $\tau$ is the time of periapsis passage, i.e, a reference time at which the orbit passes periapsis. The combination $n t$ (or $nt - n\tau$) is known as the `mean motion' $\MA$. We note that \Eq~(\ref{Chap3:Eq:kep_eq}) has no simple solutions for $\EA$ for a given $t$ (except in the trivial case of circular orbits, $e=0$). Generally, it has to be solved numerically, for example, by means of {\it Newton iteration}.}
+\end{tcolorbox}
+
+\begin{tcolorbox}[sharp corners, colback=green!30, colframe=green!80!blue, title=Orbital Dynamics IV$^7$]
+\par \textcolor{black}{In Orbital Dynamics IIb, we discussed the analytic solution to the two-body problem and described it in terms of the orbital vectors, $\unit{e}$ and $\unit{q}$ (or, equivalently, $\unit{e}$ and $\unit{l}$. Another way of describing the orbital orientation is using {\it orbital angles} (which is better to use, i.e., orbital vectors or orbital angles, depends on the problem). The orbital angles (in addition to $\TA$, $\EA$ or $\MA$) are the inclination $i$, the argument of periapsis $\omega$ and the longitude of the ascending node $\Omega$. These angles are equivalent to the `Euler' angles which describe the orientation of an object in a coordinate system. \note{A.S.H.: Do we want to include a figure to illustrate orbital elements?}. \\ \\
+The following relations exist between the orbital elements and the orbital vectors. First, to compute the elements from the vectors, we have:
+\begin{align}
+\cos(i) = \unit{z} \cdot \unit{l},
+\end{align}
+for the inclination. Here, $\unit{z}$ is just the unit $z$-direction in the coordinate system. For any two-body system, $\unit{l}$ at any time is given by
+\begin{align}
+\unit{l} = \frac{ \myvec{r} \times \myvec{v}}{||\myvec{r} \times \myvec{v} ||}.
+\end{align}
+To get the longitude of the ascending nodes $\Omega$, we define the so-called ascending node vector, $\unit{\Omega}$:
+\begin{align}
+\unit{\Omega} = \unit{z} \times \unit{l}.
+\end{align}
+We then have
+\begin{align}
+\cos(\Omega) = \unit{x} \cdot \unit{\Omega}; \qquad \sin(\Omega) = \unit{y} \cdot \unit{\Omega}.
+\end{align}
+The argument of pericenter, $\omega$, is determined by
+\begin{align}
+\cos(\omega) = \unit{e} \cdot \unit{\Omega}; \qquad \sin(\omega) = -\unit{q} \cdot \unit{\Omega}.
+\end{align}
+%Finally, the true anomaly is determined by
+%\begin{align}
+%\cos(\TA) = \unit{e} \cdot \unit{r};  \qquad \sin(\TA) = \unit{q} \cdot \unit{r}.
+%\end{align}
+The reverse operation (from orbital elements to orbital vectors) is described by
+\begin{subequations}
+\label{Chap3:Eq:elements_to_vec}
+\begin{align}
+\nonumber \unit{e} &= \left [ \cos(\Omega) \cos(\omega) - \sin(\Omega) \sin(\omega) \cos(i) \right ] \unit{x} + \left [ \sin(\Omega) \cos(\omega) \right. \\
+&\quad \left. + \cos(\Omega) \sin(\omega) \cos(i) \right ] \unit{y} + \sin(\omega) \sin(i) \, \unit{z}; \\
+\nonumber \unit{q} &= \left [ -\cos(\Omega) \sin(\omega) - \sin(\Omega) \cos(\omega) \cos(i) \right ] \unit{x} + \left [ -\sin(\Omega) \sin(\omega) \right. \\
+&\quad \left. + \cos(\Omega) \cos(\omega) \cos(i) \right ] \unit{y} + \cos(\omega) \sin(i) \, \unit{z}.
+\end{align}
+\end{subequations}
+}
+\end{tcolorbox}
+
+\begin{tcolorbox}[sharp corners, colback=green!30, colframe=green!80!blue, title=Orbital Dynamics IV$^7$ (continued)]
+\par \textcolor{black}{As also discussed in Orbital Dynamics IIb, the {\it Kepler} equation cannot be solved analytically in general. A useful method to solve it numerically is using {\it Newton iteration}. The latter is formulated as follows: let $f(x)$ be a function of $x$, and we wish to know the value of $x=x_0$ such that $f(x_0)=0$. We can then apply an iterative scheme based on the derivative of $f(x)$: 
+\begin{align}
+x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}.
+\end{align}
+In our case, to solve \Eq~(\ref{Chap3:Eq:kep_eq}), we can write $f(\EA) = \EA - e \sin(\EA) - \MA$ where $\MA = n(t-\tau)$, such that
+\begin{align}
+\EA_{n+1} = \EA_n - \frac{\EA - e \sin(\EA) - \MA}{1 - e \cos(\EA)}.
+\end{align}
+}
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[sharp corners, colback=blue!30, colframe=blue!80!blue,  title=Stability of hierarchical triples$^8$]
+\par \textcolor{black}{ In a hierarchical triple system, two objects orbit each other in a relatively tight orbit (the ``inner orbit''), whereas a third object orbits the former two objects' center of mass in a wider orbit (the ``outer orbit''). If the inner orbit is sufficiently more compact than the outer orbit, the system can remain stable on long time-scales. On short time-scales, the orbits are nearly Keplerian. At any given time, one can define ``oscullating'' orbital elements. If the third object were instantaneously removed, the inner orbit would be perfectly Keplerian and its orbital elements would be the oscullating elements. \\ \\
+It is generally hard to predict exactly whether or not a given hierarchical triple is stable or not. First, there is no unique way of defining stability. In a stable system, the energies (and hence semimajor axes) of the inner and outer orbits do not change systematically over time. However, they can change on shorter time-scales as the bodies move in their nearly-Keplerian orbits. These changes in the (oscullating) orbital elements increase in magnitude as the triple becomes more compact (i.e., the inner and outer orbital separations become more comparable and so the tertiary star aproaches the inner binary at closer and closer periapsis distances).  Also, the notion of stability depends on what timescale one requires the triple to be stable, since chaos in three-body systems can lead to destabilization of the system on timescales that are much longer than the orbital timscales. \\ \\
+Nevertheless, several usuful analytic criteria have been developed that can be used to predict stability of a given system. A well known and widely used criterium is that of Marding and Aarseth \citep{}, which reads \\ \\
+\begin{align}
+\frac{a_{\mathrm{out}}(1-e_{\mathrm{out}})}{a_{\mathrm{in}}} > 2.8 \left [ (1 + q_{\mathrm{out}}) \frac{1+e_{\mathrm{out}}}{(1 - e_{\mathrm{out}})^{1/2}} \right ]^{2/5} \left (1 - \frac{0.3 i_{\mathrm{rel}}}{180} \right ).
+\end{align}
+Here, subscripts `in' and `out' refer to the the inner and outer orbits, respectively. The mass ratio $q_{\mathrm{out}}$ is defined as $q_{\mathrm{out}} \equiv m_3/(m_1+m_2)$, where $m_1$ and $m_2$ are the masses of the two components in the inner binary, and $m_3$ is the mass of the third body. The mutual inclination between the inner and outer orbits is $i_{\mathrm{rel}}$, and it affects stability in addition to the semimajor axes and eccentricities.
+}
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[sharp corners, colback=blue!30, colframe=blue!80!blue, title=Orbital dynamics V$^9$]
+\par \textcolor{black}{Even if a triple system is hierarchical and long-term stable, its inner and outer orbits can still over time due to {\bf torques} that the inner and outer orbits exert on each other, leading to {\bf angular momentum exchange}. In the stellar context when all three bodies have similar masses, the angular momentum budget is dominated by the outer orbit, and the torques have the largest effect on the inner orbit. The angular momentum variations occur periodically; if the inner and outer orbits are initially sufficiently inclined, then the inner orbit eccentricity oscillates and can reach high values; these oscillations are known as  {\bf von Zeipel-Lidov-Kozai (ZLK)} oscillations. They have important implications in a large range of astrophysical systems. Examples beyond stellar triple systems include (but are not limited to) binary systems in galactic nuclei with a central massive black hole, triple supermassive black holes, planets in binary star systems, and binary asteroids.
+A very useful technique to study the long-term evolution in stable hierarchical triples is the {\bf secular} approximation, in which the Hamiltonian of the system is expanded in the (small) ratio of the inner to outer orbital separation. One then averages over the inner and outer orbits, which greatly simplifies the equations of motion. It turns out that, after applying this technique, as a first approximation (lowest expansion order, assuming one of the bodies in the inner binary is massless, and that the inner orbit has zero initial eccentricity), the {\bf maximum eccentricity} reached during ZLK oscillations is given by
+\begin{align}
+\label{eq:ZLK_emax}
+e_\mathrm{max} = \sqrt{1-\frac{5}{3}\cos^2 (i_\mathrm{rel})},
+\end{align}
+where $i_\mathrm{rel}$ is the initial relative inclination angle between the inner and outer orbits. This shows that $e_\mathrm{max}$ is sensitively dependent on $i_\mathrm{max}$; in particular,  eccentricity excitation occurs only if $\cos(i_\mathrm{rel}) < \sqrt{3/5}$ (so $39.23^\circ \lesssim i_\mathrm{rel} \lesssim 140.77^\circ$), and $e_\mathrm{max} \rightarrow 1$ as $i_\mathrm{max} \rightarrow 90^\circ$. As a first approximation, the {\bf period} of the oscillations is given by
+\begin{align}
+T_\mathrm{ZLK} \approx \frac{P_\mathrm{out}^2}{P_\mathrm{in}} \frac{m_1+m_2+m_3}{m_3} \left(1-e_\mathrm{out}^2 \right )^{3/2},
+\end{align}
+where $P_\mathrm{in}$ and $P_\mathrm{out}$ are the inner and outer orbital periods, respectively. 
+The above expressions are first approximations that are stricitly valid only in rather simplified cases. In the more general case, the dynamics are more complicated. When higher-order effects in the expansion are taken into account (in particular, octupole-order terms), then the long-term evolution can be {\bf chaotic}, and much higher eccentricities can be reached than implied by \Eq~(\ref{eq:ZLK_emax}). Specifically, octupole-order terms start to become important when
+\begin{align}
+\epsilon_\mathrm{oct} = \frac{|m_1-m_2|}{m_1+m_2} \frac{a_\mathrm{in}}{a_\mathrm{out}} \frac{e_\mathrm{out}}{1-e_\mathrm{out}^2} \gtrsim 10^{-4}.
+\end{align}
+Furthermore, ZLK oscillations can be {\bf quenched} if additional {\bf short-period forces} (forces that depend very sensitively on separation) act in the inner binary which lead to additional apsidal motion/orbital precession. These could arise because of relativistic corrections, tidal bulges, or stellar rotation. Generally, this quenching occurs if the time-scale of apsidal motion due to short-range forces, $T_\mathrm{SRF}$, is significantly shorter than the ZLK time-scale, i.e., $T_\mathrm{SRF} \ll T_\mathrm{ZLK}$. 
+}  
+\end{tcolorbox}
+
+%levelthree:
+\begin{tcolorbox}[sharp corners, colback=green!30, colframe=green!80!blue, title=Orbital Dynamics VI$^{10}$]
+\par \textcolor{black}{Here, we discuss some analytical aspects of ZLK oscillations in more detail. The Hamiltonian of the hierarchical three-body system can be written in terms of the inner and outer orbital separations $\myvec{r}_\mathrm{in}$ and $\myvec{r}_\mathrm{out}$ as
+\begin{align}
+\label{eq:Htriplegen}
+\nonumber \mathcal{H} &= T+V = - \frac{\gconst m_1m_2}{2a_\mathrm{in}} - \frac{\gconst(m_1+m_2)m_3}{2 a_\mathrm{out}} \\
+&\quad - \frac{\gconst m_3}{r_2} \sum_{n=2}^\infty \mathcal{M}_n \left ( \frac{r_\mathrm{in}}{r_\mathrm{out}} \right )^n \widetilde{P}_n(\cos \Phi).
+\end{align}
+The first two terms represent the binding energies of the inner and outer orbits, respectively, and the remaining terms in the second line represent the {\bf perturbing function} that describes how the orbits evolve on time-scales (much) longer than the orbital time-scales (here, we assumed that the orbits are Keplerian on short time-scales for the terms in the first line). The parameter $\mathcal{M}_n$ is given by
+\begin{align}
+\mathcal{M}_n \equiv \frac{m_1 m_2}{m_1+m_2}\frac{m_1^{n-1} - (-m_2)^{n-1}}{m_1+m_2)^{n-1}}.
+\end{align}
+Furthermore, $\widetilde{P}_n(x)$ is the $n^\mathrm{th}$ Legendre polynomial, and $\Phi$ is the (instantaneous) angle between $\myvec{r}_\mathrm{in}$ and $\myvec{r}_\mathrm{out}$. \\ \\
+Truncating the expansion in \Eq~(\ref{eq:Htriplegen}) to $n=2$ (the {\bf quadrupole} order) and averaging over both inner and outer orbits, the Hamiltonian can be written as\footnote{There are cases when this `double' averaging is {\bf not} justified, i.e., it can happen that the time-scale on which orbits evolve is shorter than one of the orbital periods in the system. One notable example is the {\bf evection resonance}, when the time-scale for the inner orbit to precess due to the torque of the third body is comparable to the outer orbital period, potentially leading to additional eccentricity excitation. }
+\begin{align}
+\label{eq:Htriplequadav}
+\nonumber \langle \mathcal{H}_\mathrm{quad}\rangle &= C_\mathrm{quad} \left [ \left (2 + 3 e_\mathrm{in}^2 \right ) \left (3 \cos^2(i_\mathrm{tot}) - 1 \right ) \right. \\
+&\quad \left. + 15 e_\mathrm{in}^2 \sin^2(i_\mathrm{tot}) \cos(2\omega_\mathrm{in}) \right ].
+\end{align} 
+Here, 
+\begin{align}
+C_\mathrm{quad} \equiv \frac{1}{16} \frac{\gconst m_1m_2m_3}{(m_1+m_2) \, a_\mathrm{out}} \left (\frac{a_\mathrm{in}}{a_\mathrm{out}} \right )^2 \left (1 - e_\mathrm{out}^2 \right )^{-3/2},
+\end{align}
+and $\omega_\mathrm{in}$ is the inner orbit argument of periapsis. Note that we switched to {\bf orbital elements} to describe the orbital orientations. 
+}  
+\end{tcolorbox}
+
+\begin{tcolorbox}[sharp corners, colback=green!30, colframe=green!80!blue, title=Orbital Dynamics VI$^{10}$ (continued)]
+\par \textcolor{black}{
+Generally, from a given Hamiltonian, the {\bf equations of motion} read
+\begin{align}
+\label{eq:Hameq}
+\left \{ \begin{array}{lll}
+\displaystyle \dot{L}_j &= \displaystyle \frac{\partial \mathcal{H}}{\partial \TA_j}; & \dot{\TA}_j = \displaystyle - \frac{\partial \mathcal{H}}{\partial L_j}; \\
+\displaystyle \dot{G}_j &= \displaystyle \frac{\partial \mathcal{H}}{\partial \AP_j}; & \dot{\AP}_j = \displaystyle - \frac{\partial \mathcal{H}}{\partial G_j}; \\
+\displaystyle \dot{H}_j &= \displaystyle \frac{\partial \mathcal{H}}{\partial \LAN_j}; & \dot{\LAN}_j = \displaystyle - \frac{\partial \mathcal{H}}{\partial H_j}. \\
+\end{array} \right.
+\end{align}
+The coordinates used are the {\bf Delaunay elements}; in particular, $L_j$, $G_j$, and $H_j$ are related to the orbital angular momentum: $L_j = \mu_j \sqrt{\gconst M_j a_j}$ is the circular orbital angular momentum, $G_j = L_j \sqrt{1-e_j}^2$ the general angular momentum, and $H_j = G_j \cos (i_j)$ the $z$-component of the angular momentum. Here, $\mu_j$ is the reduced mass, which is $\mu_\mathrm{in} = m_1m_2/M_\mathrm{in}$ and $\mu_\mathrm{out} = m_3 M_\mathrm{in}/M_\mathrm{out}$ with $M_\mathrm{in} \equiv m_1+m_2$, and $M_\mathrm{out} \equiv m_1+m_2+m_3$. The {\bf conjugate} coordinates to the momenta $L_j$, $G_j$, and $H_j$ are the true anomaly $\TA_j$, the argument of periapsis $\AP_j$, and the longitude of the ascending note $\LAN_j$. \\ \\
+From \Eq~(\ref{eq:Htriplequadav}), it is clear that the hierarchical three-body Hamiltonian at the quadrupole order is independent of $\AP_\mathrm{out}$, which immediately implies that the {\bf outer orbital eccentricity $e_\mathrm{out}$ is constant}. This feature disappears when higher-order terms are included (although, in systems with similar masses, the outer orbital eccentricity usually changes very little). 
+\note{More to be added.}
+}
+\end{tcolorbox}
 
 \end{document}
 
